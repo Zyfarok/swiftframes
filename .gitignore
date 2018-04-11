@@ -100,5 +100,8 @@ ENV/
 # mypy
 .mypy_cache/
 
+# VSCode
+.vscode/
+
 # Swiftframes Specific
 *.png
