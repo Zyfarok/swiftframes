@@ -7,6 +7,10 @@ inPrefix = "input/"
 inMidfix = " ("
 inSuffix = ").png"
 
+outPrefix = "output/"
+outMidfix = " ("
+outSuffix = ").png"
+
 
 def readFrame(framesName: str, frameId: int,
     shapeCheck: Tuple[int,int] = (-1, -1)) -> np.ndarray:
@@ -76,5 +80,5 @@ def writeFrame(framesName: str, frameId: float,
         frameId {float} -- Id of the frame
         img {np.ndarray} -- frame to write
     """
-    filename = framesName + " (" + str(frameId) + ").png"
+    filename = outPrefix + framesName + outMidfix + str(frameId) + outSuffix
     cv2.imwrite(filename, img)
