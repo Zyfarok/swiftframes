@@ -1,205 +1,178 @@
-from typing import List, Tuple
+from typing import List, Tuple, Iterable, Optional
 import numpy as np
 import cv2 as cv
 import numpy as np
 import time
+from util.collection_util import *
+from functools import reduce
+from motion_match import MotionMatch, KP
 
+#### Detectors, fastest first. (fast is a bit faster but agast is a bit better. Orb offers sparse but good quality features and surf is very good but very slow) :
+#fast = cv.FastFeatureDetector_create(threshold=5, nonmaxSuppression=True, type=cv.FastFeatureDetector_TYPE_9_16)
+agast = cv.AgastFeatureDetector_create(threshold=5, nonmaxSuppression=True, type=cv.AgastFeatureDetector_OAST_9_16)
+orb_dtc = cv.ORB_create(edgeThreshold=24, patchSize=31, nlevels=3, fastThreshold=8, scaleFactor=1.2, WTA_K=2, scoreType=cv.ORB_HARRIS_SCORE, firstLevel=0, nfeatures=6000)
 ## SURF Defaults : hessianThreshold=100, nOctaves=4, nOctaveLayers=3, extended=False, upright=False
-surf: cv.Feature2D = cv.xfeatures2d.SURF_create(hessianThreshold=25, nOctaves=4, nOctaveLayers=3, extended=False, upright=True)
+#surf_dtc = cv.xfeatures2d.SURF_create(hessianThreshold=10, nOctaves=4, nOctaveLayers=3, extended=False, upright=True)
+default_dtc = agast
 
-#### Matchers
-bfmatcher: cv.DescriptorMatcher = cv.BFMatcher()
-#bfcrossmatcher: cv.DescriptorMatcher = cv.BFMatcher(crossCheck=True)
-#flannmatcher = cv.FlannBasedMatcher(
-#    dict(algorithm = 3), # , trees = 5
-#    dict() # check = 50
-#)
+#### Descriptors, Matchers, and match-distance result scale (worst to best. orb and brief are good choices)
+surf_dsc = (cv.xfeatures2d.SURF_create(hessianThreshold=10,nOctaves=4,nOctaveLayers=3,extended=False,upright=True),
+            cv.BFMatcher_create(normType=cv.NORM_L1), 1 / (1))
+orb_dsc = (cv.ORB_create(edgeThreshold=24, patchSize=31, nlevels=8, fastThreshold=14, scaleFactor=1.2, WTA_K=2, scoreType=cv.ORB_HARRIS_SCORE, firstLevel=0, nfeatures=6000),
+            cv.BFMatcher_create(normType=cv.NORM_HAMMING), 1 / (18))
+brief = (cv.xfeatures2d.BriefDescriptorExtractor_create(bytes=32, use_orientation=False),
+            cv.BFMatcher_create(normType=cv.NORM_HAMMING), 1 / (12))
+sift = (cv.xfeatures2d.SIFT_create(nOctaveLayers=3, contrastThreshold=0.01, edgeThreshold=100.0, sigma=1.6),
+            cv.BFMatcher_create(normType=cv.NORM_L1), 1 / (500))
+default_dsc = brief
 
-#degree_one_max = 400
-
-class motionMatch:
-    def __init__(self, start_id: int, match_distance: float, *kps: Tuple[cv.KeyPoint, ...]):
-        self.start_id = start_id
-        self.match_distance = match_distance
-        self.kps = kps
-        self.degree = len(kps) - 1
-        self.end_id = start_id + self.degree
-        self.center = (start_id + self.end_id) / 2.0
-
-    def genMotionFeature(self, at_time: float):
-        time_pos = max(min(int(floor(at_time)), self.degree - 1),0)
-        relative_time = at_time - time_pos
-        quality = pow(2, self.degree) / (0.01 + self.matchDistance)
-        query_kp, train_kp = self.kps[time_pos], self.kps[time_pos + 1]
-        query_pt, train_pt = np.array(query_kp.pt), np.array(train_kp.pt)
-        pt = query_pt + relative_time * (train_pt - query_pt)
-        size = query_kp.size + relative_time * (train_kp.size - query_kp.size)
-        if at_time < start_id:
-            # past motion : reduce quality
-            quality = quality * pow(2, 2 * (at_time - start_id))
-            return motionFeature(pt, None, query_pt, size, quality)
-        elif at_time > end_id:
-            # future motion : reduce quality
-            quality = quality * pow(2, 2 * (end_id - at_time))
-            return motionFeature(pt, train_pt, None, size, quality)
-        else:
-            return motionFeature(pt, query_pt, train_pt, size, quality)
-
-class motionFeature:
-    def __init__(self, pt: np.ndarray, query_pt, train_pt, size, quality: float):
-        self.pt = np.array(pt)
-        
-        self.query_pt = query_pt
-        self.train_pt = train_pt
-        self.size = size
-        self.quality = quality
-
-def computeMotion(imgs: List[np.ndarray], degree: int = 1):
-    assert isinstance(degree,int), "degree should be an int"
+def computeMotion(imgs: Iterable[np.ndarray], degree: int = 1, detector: cv.Feature2D = default_dtc,
+        descriptor: cv.Feature2D = default_dsc[0], matcher: cv.DescriptorMatcher = default_dsc[1],
+        distscale: float = default_dsc[2], dist_thresh: float = 1.5, better_thresh: float = 1.5
+        ) -> Tuple[List[List[MotionMatch]], ...]:
+    assert isinstance(degree, int), "degree should be an int"
     assert degree > 0 and degree < 5, "degree should be between 1 and 4"
 
-    #### Detect and compute features :
-    start_time = time.time()
-    kpss = surf.detect(imgs, None)
-    print("detect time :", time.time() - start_time)
+    ## Detect features and Compute descriptors :
+    #start_time = time.time()
+    kpss = list()
+    descss = list()
+    for img in imgs:
+        kps, descs = descriptor.compute(img, detector.detect(img, None))
+        kpss.append(kps)
+        descss.append(descs)
+    #kpss, descss = descriptor.compute(imgs, detector.detect(imgs, None))
+    # TODO : Compute RGB colors at keypoints ?
+    #print("detect time :", time.time() - start_time)
 
-    start_time = time.time()
-    descss = surf.compute(imgs,kpss)[1]
-    print("compute time :", time.time() - start_time)
-
-    for kps in zip(kpss, descss):
-        print('kps len : ', len(kps))
+    for i, kps in enumerate(kpss):
+        print(i, 'kps len : ', len(kps))
 
     #### Match features
-    matchesss = matchFeaturess(descss, bfmatcher, k=5)
-        
-    # Translate matches to motionMatches and improve distance
+    print("Matching")
+    matchess = matchFeaturess(descss, matcher, k=2)
+    #test = list(sorted(map(lambda x: x[0].distance, matchesss[0])))
+    #print(np.percentile(test, [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100]))
 
-    simple_motion_matchesss = computeMotionMatchesss(matchesss, kpss, imgs)
-    if(degree == 1):
-        return bestMotionMatchess(simple_motion_matchesss), list(), list()
+        
+    # Translate matches to motionMatches
+    print("Translating to motion matches")
+    motion_matchess = computeMotionMatchess(matchess, kpss, distscale=distscale)
+    size = 2
+    print("Merging motion matches")
+    for i in range(degree - 1):
+        print("degree :", i + 2)
+        motion_matchess = mergeMotionMatchess(motion_matchess, i + 2, dist_thresh * 3)
+        size += 1
+
+
+    print("select best motionmatches and return")
+    # TODO : Handle 
+    return (bestMotionMatchess(motion_matchess, dist_thresh, better_thresh=better_thresh, size=size),)
     
 
+def getMotionFeatures(at_pos: int, at_time: float, mms: Iterable[MotionMatch], verbose=False):
+    return [mm.genMotionFeature(at_pos, at_time, verbose=verbose) for mm in mms]
 
-    """
-    if(degree == 1):
-        matchess = list(sortMatchess(matchess, kpss, imgs))
-        for i in range(len(matchess)):
-            matches = matchess[i][:degree_one_max]
-            query_kps = kpss[i]
-            train_kps = kpss[i+1]
-            motion_features = list()
-            for match in matches:
-                query_kp = query_kps[match.queryIdx]
-                train_kp = train_kps[match.trainIdx]
-                motion = (query_kp.pt, train_kp.pt)
-                motion_features.append(motionVector(motion))
-            motion_featuresss.append((motion_features,)) # Inside tuples
-            appearing_featuress.append(list())
-            dispappearing_featuress.append(list())
-        # TODO : Compute Motion (simple feature matching)
-    elif (degree == 2):
-        for i in range(len(matchess)):
-            matches = matchess[i][:degree_one_max]
-            query_kps = kpss[i]
-            train_kps = kpss[i+1]
-            motion_features = list()
-            for match in matches:
-                query_kp = query_kps[match.queryIdx]
-                train_kp = train_kps[match.trainIdx]
-                motion = (query_kp.pt, train_kp.pt)
-                motion_features.append(motionVector(motion))
-            motion_featuresss.append((motion_features,)) # Inside tuples
-            appearing_matchesss.append(list())
-            disappearing_matchesss.append(list())
-        # TODO : Compute Motion (simple motion coherence)
-    elif (degree == 3):
-        pass
-        # TODO : Compute Motion (better motion coherence
-        # + hidden features)
-    elif (degree == 4):
-        pass
-        # TODO : Compute Motion (better motion coherence
-        # + better hidden features motion coherence)
-    else:
-        print("Wrong motion interpolation degree")
-        exit(1)
-    """
-    return final_motion_matchesss, appearing_matchesss, disappearing_matchesss
+def matchFeaturess(descss: list, matcher: cv.DescriptorMatcher, k: int = 3):
+    # TODO : Improve matching speed (divide in areas)
+    matchess = (
+        [
+            match
+            for matches in matcher.knnMatch(query_descs, train_descs, k)
+            for match in matches
+        ]
+        for query_descs, train_descs in zip(descss[:-1], descss[1:])
+    )
+    return matchess
 
+def matchToMotion(match, start_id, query_kps, train_kps, distscale=1.0):
+    query_idx = match.queryIdx
+    train_idx = match.trainIdx
+    kp_pts = (KP(query_kps[query_idx]), KP(train_kps[train_idx]))
+    kp_ids = (query_idx, train_idx)
+    
+    distance = match.distance * distscale
+    distance *= distance
 
-def matchFeaturess(descss: list, matcher: cv.DescriptorMatcher, k=1):
-    def matchSelect(matches):
-        return list(filter(lambda match: match.distance < (matches[0].distance * 2), matches))
-    matchesss = list()
-    for query_descs, train_descs in zip(descss[:-1], descss[1:]):
-        matchess = matcher.knnMatch(query_descs, train_descs, k)
-        matchesss.append(list(map(matchSelect, matchess)))
-    return matchesss
+    return MotionMatch(start_id, kp_pts, kp_ids, match_distances=(distance,))
 
+def computeMotionMatchess(matchess, kpss, distscale=1.0):
+    motion_matchess = (
+        list(map(
+            lambda match, i=i: matchToMotion(
+                match,
+                i,
+                kpss[i],
+                kpss[i+1],
+                distscale=distscale
+            ), matches))
+        for i, matches in enumerate(matchess)
+    )
+    return motion_matchess
 
-def computeMotionMatchesss(matchesss, kpss, imgs):
-    motion_matchesss = list()
-    for i in range(len(matchesss)):
-        matchess = matchesss[i]
-        query_kps, train_kps = kpss[i], kpss[i+1]
-        query_img, train_img = imgs[i], imgs[i+1]
-        motion_matchesss.append(list(map(
-            lambda matches: matchesToMotion(
-                matches,
-                query_kps,
-                train_kps,
-                query_img, train_img, i
-            ), matchess)))
-    return motion_matchesss
+def mergeMotionMatchess(motion_matchess: Iterable[List[MotionMatch]], degree: int, goodEnoughThreshold: float = 0):
+    def mergeMotionMatches(query_motion_matches: List[MotionMatch],
+    train_motion_matches: List[MotionMatch]):
+        groupedTrain = groupbydefault(train_motion_matches, lambda match: match.startKeypointIds())
+        if goodEnoughThreshold != 0:
+            return list(filter(lambda mm: mm.final_distance() < goodEnoughThreshold,
+                (
+                    query.merge(train)
+                    for query in query_motion_matches
+                    for train in groupedTrain[query.endKeypointIds()]
+                )))
+        else:
+            return [
+                query.merge(train)
+                for query in query_motion_matches
+                for train in groupedTrain[query.endKeypointIds()]
+            ]
+    query = next(motion_matchess)
+    for i, train in enumerate(motion_matchess):
+        print("degree", degree, "merge :", i)
+        yield mergeMotionMatches(query, train)
+        query = train
+    print("finished merging.")
 
+def bestMotionMatchess(motion_matchess: Iterable[List[MotionMatch]], dist_thresh: float, better_thresh: float = 1.0, size: int = 2):
+    def secondBestDist(motion_matches: Iterable[MotionMatch]):
+        bestDist = float('inf')
+        secondBestDist = bestDist
+        for match in motion_matches:
+            dist = match.final_distance()
+            if(dist < secondBestDist):
+                if(dist < bestDist):
+                    secondBestDist = bestDist
+                    bestDist = dist
+                else:
+                    secondBestDist = dist
+        return secondBestDist
 
-def backwardInsertSorted(l: list, e, k: callable):
-    i = len(l)
-    while  i > 0 and k(l[i - 1]) > k(e):
-        i -= 1
-    l.insert(i,e)
+    def bestMotionMatches(motion_matches: List[MotionMatch]):
+        print("start : ", len(motion_matches))
+        groupedSecondBestDist = [
+            {k: secondBestDist(v) for k, v in groupby(motion_matches, key=lambda match, i=i: match.kp_ids[i])}
+            for i in range(size)
+        ]
+        l = list(filter(
+            lambda match: all(
+                [match.final_distance() * better_thresh < groupedSecondBestDist[i][match.kp_ids[i]]
+                    for i in range(size)]
+                ),
+            motion_matches
+        ))
+        print("best : ", len(l))
+        return l
 
-
-def matchesToMotion(matches, query_kps, train_kps, query_img, train_img, start_id):
-    motion_matches = list()
-    for i in range(len(matches)):
-        match = matches[i]
-        query_kp, train_kp = query_kps[match.queryIdx], train_kps[match.trainIdx]
-        
-        # Compute new distance
-        distance = matchDistance(match, query_kp, train_kp, query_img, train_img)
-        
-        # Generate motionMatch from distance
-        motion_match = motionMatch(start_id, distance, query_kp, train_kp)
-
-        # Insert motionMatch in list in distance order (check from the end)
-        backwardInsertSorted(motion_matches, motion_match, lambda m: m.match_distance)
-    return motion_matches
-
-def matchDistance(match, query_kp, train_kp, query_img, train_img):
-    # TODO : Compute better match distance (Considering position, orientation, scale/size, color, ...)
-    return match.distance
-
-
-# TODO : degree 1 motion coherence check function
-
-def bestMotionMatchess(motion_matchesss: List[List[List[motionMatch]]]):
-    def bestMotionMatches(motion_matchess: List[List[motionMatch]]):
-        return sorted(
-            map(
-                lambda motion_matches: motion_matches[0],
-                filter(
-                    lambda motion_matches: len(motion_matches) > 0,
-                    motion_matchess
-                )
-            ), key=lambda m: m.match_distance)
-    return list(map(bestMotionMatches,motion_matchesss))
-
-#def sortMatchess(matchess, kpss, imgs):
-#    return map(sortMatches, zip(matchess, kpss[:-1], kpss[1:], imgs[:-1], imgs[1:]))
-
-#def sortMatches(x):
-#    matches, query_kps, train_kps, query_img, train_img = x
-#    return sorted(matches,
-#    key=lambda match: matchDistance(match, query_kps, train_kps, query_img, train_img))
+    def goodMotionMatches(motion_matches: Iterable[MotionMatch]):
+        l = list(sorted(
+            filter(
+                lambda motion_match: motion_match.final_distance() < dist_thresh,
+                motion_matches
+            ), key=lambda m: m.final_distance()))
+        print("good : ", len(l))
+        return l
+    best = map(bestMotionMatches, motion_matchess)
+    good = list(map(goodMotionMatches, best))
+    return good

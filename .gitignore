@@ -106,3 +106,4 @@ ENV/
 # Swiftframes Specific
 *.png
 *.zip
+*.p

@@ -1,0 +1,851 @@
+##################################### Detector : agast #####################################
+agast detect 1 exec time : 0.011312484741210938
+agast feature 1 count : 4342
+agast detect 2 exec time : 0.014745950698852539
+agast feature 2 count : 5004
+--------------------------------------- Descriptors ---------------------------------------
+time w/out matching : 0.904196739 # Bad
+agast+sift(l1) compute 1 exec time : 0.32494044303894043
+agast+sift(l1) compute 2 exec time : 0.3102893829345703
+agast+sift(l1) matching exec time : 1.4616281986236572
+#### agast+sift(l1) total time : 2.3658249378204346 # Bad
+#### agast+sift(l1) match count : 4342
+#### agast+sift(l1) average match distance : 618.1777982496545
+#### agast+sift(l1) average match point distance : 0.23997545995971006
+
+####---- Good ----####
+time w/out matching : 0.377013922 # Good
+agast+freak(H1) compute 1 exec time : 0.05032491683959961
+agast+freak(H1) compute 2 exec time : 0.053798675537109375
+agast+freak(H1) matching exec time : 0.3768002986907959
+#### agast+freak(H1) total time : 0.7538142204284668 # Good
+#### agast+freak(H1) match count : 3648
+#### agast+freak(H1) average match distance : 25.966008771929825
+#### agast+freak(H1) average match point distance : 0.2634197672843311
+agast+freak(H2) compute 1 exec time : 0.037526845932006836
+agast+freak(H2) compute 2 exec time : 0.03833651542663574
+agast+freak(H2) matching exec time : 0.4711418151855469
+#### agast+freak(H2) total time : 0.8145637512207031 # Ok
+#### agast+freak(H2) match count : 3648
+#### agast+freak(H2) average match distance : 24.77823464912281
+#### agast+freak(H2) average match point distance : 0.2478356841056148
+
+##################################### Detector : akaze #####################################
+akaze detect 1 exec time : 0.17934060096740723
+akaze feature 1 count : 4264
+akaze detect 2 exec time : 0.1940772533416748
+akaze feature 2 count : 4377
+--------------------------------------- Descriptors ---------------------------------------
+time w/out matching : 0.74469924
+akaze+freak(H1) compute 1 exec time : 0.06273269653320312
+akaze+freak(H1) compute 2 exec time : 0.05109286308288574
+akaze+freak(H1) matching exec time : 0.4974086284637451
+#### akaze+freak(H1) total time : 1.24210786819458 # Bad
+#### akaze+freak(H1) match count : 4023
+#### akaze+freak(H1) average match distance : 22.301764852100423
+#### akaze+freak(H1) average match point distance : 0.4252597620137671
+
+##################################### Detector : brisk #####################################
+brisk detect 1 exec time : 0.11311960220336914
+brisk feature 1 count : 4606
+brisk detect 2 exec time : 0.12835073471069336
+brisk feature 2 count : 4942
+--------------------------------------- Descriptors ---------------------------------------
+####---- OK ----####
+time w/out matching : 0.618960381 # Ok
+brisk+freak(H1) compute 1 exec time : 0.04649090766906738
+brisk+freak(H1) compute 2 exec time : 0.05585527420043945
+brisk+freak(H1) matching exec time : 0.5487427711486816
+#### brisk+freak(H1) total time : 1.1677031517028809 # Bad
+#### brisk+freak(H1) match count : 4280
+#### brisk+freak(H1) average match distance : 26.19158878504673
+#### brisk+freak(H1) average match point distance : 0.20988864945432825
+
+##################################### Detector : fast #####################################
+fast detect 1 exec time : 0.0069768428802490234
+fast feature 1 count : 4899
+fast detect 2 exec time : 0.014528512954711914
+fast feature 2 count : 5758
+--------------------------------------- Descriptors ---------------------------------------
+time w/out matching : 1.700956821 # Very bad
+fast+sift(l1) compute 1 exec time : 0.5941276550292969
+fast+sift(l1) compute 2 exec time : 0.5851912498474121
+fast+sift(l1) matching exec time : 3.601121187210083
+#### fast+sift(l1) total time : 5.302078008651733 # Very Bad
+#### fast+sift(l1) match count : 4899
+#### fast+sift(l1) average match distance : 728.8905899163094
+#### fast+sift(l1) average match point distance : 0.4693515998477898
+
+####---- OK ----####
+time w/out matching : 0.633688927 # Ok
+fast+freak(H1) compute 1 exec time : 0.04955625534057617
+fast+freak(H1) compute 2 exec time : 0.06183218955993652
+fast+freak(H1) matching exec time : 0.47318291664123535
+#### fast+freak(H1) total time : 1.1068718433380127 # Bad
+#### fast+freak(H1) match count : 4092
+#### fast+freak(H1) average match distance : 30.05962854349951
+#### fast+freak(H1) average match point distance : 0.4165608237816108
+
+##################################### Detector : gftt #####################################
+gftt detect 1 exec time : 0.050348758697509766
+gftt feature 1 count : 4749
+gftt detect 2 exec time : 0.059671640396118164
+gftt feature 2 count : 5189
+--------------------------------------- Descriptors ---------------------------------------
+####---- OK ----####
+time w/out matching : 0.516549349 # Ok
+gftt+freak(H1) compute 1 exec time : 0.034746646881103516
+gftt+freak(H1) compute 2 exec time : 0.04377341270446777
+gftt+freak(H1) matching exec time : 0.2084202766418457
+#### gftt+freak(H1) total time : 0.7249696254730225 # Good
+#### gftt+freak(H1) match count : 3960
+#### gftt+freak(H1) average match distance : 26.13131313131313
+#### gftt+freak(H1) average match point distance : 0.3849883906094118
+gftt+freak(H2) compute 1 exec time : 0.034273386001586914
+gftt+freak(H2) compute 2 exec time : 0.04216361045837402
+gftt+freak(H2) matching exec time : 0.40463829040527344
+#### gftt+freak(H2) total time : 0.9188802242279053 # Ok
+#### gftt+freak(H2) match count : 3960
+#### gftt+freak(H2) average match distance : 24.957323232323233
+#### gftt+freak(H2) average match point distance : 0.3704472759763918
+
+##################################### Detector : kaze #####################################
+kaze detect 1 exec time : 1.0946226119995117
+kaze feature 1 count : 5032
+kaze detect 2 exec time : 0.9247674942016602
+kaze feature 2 count : 5161
+--------------------------------------- Descriptors ---------------------------------------
+time w/out matching : 2.325278759 # Very bad
+kaze+freak(H1) compute 1 exec time : 0.0531926155090332
+kaze+freak(H1) compute 2 exec time : 0.0601963996887207
+kaze+freak(H1) matching exec time : 0.1980876922607422
+#### kaze+freak(H1) total time : 2.5233664512634277 # Very bad
+#### kaze+freak(H1) match count : 4176
+#### kaze+freak(H1) average match distance : 22.924808429118773
+#### kaze+freak(H1) average match point distance : 0.4304867249804586
+kaze+freak(H2) compute 1 exec time : 0.03475618362426758
+kaze+freak(H2) compute 2 exec time : 0.05347633361816406
+kaze+freak(H2) matching exec time : 0.48971033096313477
+#### kaze+freak(H2) total time : 2.7883286476135254 # Very bad
+#### kaze+freak(H2) match count : 4176
+#### kaze+freak(H2) average match distance : 21.980842911877396
+#### kaze+freak(H2) average match point distance : 0.412013915371135
+
+##################################### Detector : orb #####################################
+orb detect 1 exec time : 0.028715848922729492
+orb feature 1 count : 5000
+orb detect 2 exec time : 0.04647469520568848
+orb feature 2 count : 5000
+--------------------------------------- Descriptors ---------------------------------------
+time w/out matching : 4.903630018 # Very very bad
+orb+sift(l2) compute 1 exec time : 2.079104423522949
+orb+sift(l2) compute 2 exec time : 2.407778263092041
+orb+sift(l2) matching exec time : 1.702218770980835
+#### orb+sift(l2) total time : 6.605848789215088 # Very very bad
+#### orb+sift(l2) match count : 5000
+#### orb+sift(l2) average match distance : 83.68566304512024
+#### orb+sift(l2) average match point distance : 0.1585611438154398
+
+time w/out matching : 2.405395269 # Very bad
+orb+surf(l1) compute 1 exec time : 0.832129955291748
+orb+surf(l1) compute 2 exec time : 1.156296968460083
+orb+surf(l1) matching exec time : 0.7981071472167969
+#### orb+surf(l1) total time : 3.2035024166107178 # Very bad
+#### orb+surf(l1) match count : 5000
+#### orb+surf(l1) average match distance : 0.5014939361214638
+#### orb+surf(l1) average match point distance : 0.1934732898723126
+orb+surf(l2) compute 1 exec time : 0.9997813701629639
+orb+surf(l2) compute 2 exec time : 0.9660370349884033
+orb+surf(l2) matching exec time : 1.0975875854492188
+#### orb+surf(l2) total time : 3.4810032844543457 # Very bad
+#### orb+surf(l2) match count : 5000
+#### orb+surf(l2) average match distance : 0.1161886029444635
+#### orb+surf(l2) average match point distance : 0.28652962312143987
+
+time w/out matching : 2.187108278 # Very bad
+orb+surfext(l1) compute 1 exec time : 0.9146122932434082
+orb+surfext(l1) compute 2 exec time : 0.7357120513916016
+orb+surfext(l1) matching exec time : 2.4408538341522217
+#### orb+surfext(l1) total time : 4.627962112426758 # Very bad
+#### orb+surfext(l1) match count : 5000
+#### orb+surfext(l1) average match distance : 1.1317192969828844
+#### orb+surfext(l1) average match point distance : 0.14153097436134063
+orb+surfext(l2) compute 1 exec time : 0.8081934452056885
+orb+surfext(l2) compute 2 exec time : 0.7261929512023926
+orb+surfext(l2) matching exec time : 2.3418705463409424
+#### orb+surfext(l2) total time : 4.415037631988525 # Very bad
+#### orb+surfext(l2) match count : 5000
+#### orb+surfext(l2) average match distance : 0.2028484585184604
+#### orb+surfext(l2) average match point distance : 0.2571597635008149
+
+####---- OK ----####
+time w/out matching : 0.626241446 # Ok
+orb+brisk(H1) compute 1 exec time : 0.11281895637512207
+orb+brisk(H1) compute 2 exec time : 0.09690594673156738
+orb+brisk(H1) matching exec time : 0.3899660110473633
+#### orb+brisk(H1) total time : 1.0162074565887451 # Ok
+#### orb+brisk(H1) match count : 4556
+#### orb+brisk(H1) average match distance : 39.40122914837577
+#### orb+brisk(H1) average match point distance : 0.32914658885433973
+
+time w/out matching : 0.909638405 # Bad
+orb+daisy(l1) compute 1 exec time : 0.23665165901184082
+orb+daisy(l1) compute 2 exec time : 0.25643467903137207
+orb+daisy(l1) matching exec time : 3.0668606758117676
+#### orb+daisy(l1) total time : 3.976499080657959 # Very bad
+#### orb+daisy(l1) match count : 5000
+#### orb+daisy(l1) average match distance : 0.14292355981674046
+#### orb+daisy(l1) average match point distance : 0.3108382619270094
+
+####---- OK ----####
+time w/out matching : 0.495019436 # Ok
+orb+freak(H1) compute 1 exec time : 0.039581298828125
+orb+freak(H1) compute 2 exec time : 0.03803753852844238
+orb+freak(H1) matching exec time : 0.29714179039001465
+#### orb+freak(H1) total time : 0.792161226272583 # Ok
+#### orb+freak(H1) match count : 4799
+#### orb+freak(H1) average match distance : 22.91769118566368
+#### orb+freak(H1) average match point distance : 0.11903883290830261
+
+time w/out matching : 1.250231266 # Bad
+orb+latch(H1) compute 1 exec time : 0.4186108112335205
+orb+latch(H1) compute 2 exec time : 0.41523027420043945
+orb+latch(H1) matching exec time : 0.26317524909973145
+#### orb+latch(H1) total time : 1.51340651512146 # Bad
+#### orb+latch(H1) match count : 5000
+#### orb+latch(H1) average match distance : 20.7286
+#### orb+latch(H1) average match point distance : 0.3235392593278011
+
+##################################### Detector : surf #####################################
+surf detect 1 exec time : 0.08793783187866211
+surf feature 1 count : 4828
+surf detect 2 exec time : 0.09747910499572754
+surf feature 2 count : 5026
+--------------------------------------- Descriptors ---------------------------------------
+time w/out matching : 4.019449711 # Very bad
+surf+sift(l1) compute 1 exec time : 1.830019474029541
+surf+sift(l1) compute 2 exec time : 1.8566572666168213
+surf+sift(l1) matching exec time : 1.2677063941955566
+#### surf+sift(l1) total time : 5.287156105 # Very bad
+#### surf+sift(l1) match count : 4828
+#### surf+sift(l1) average match distance : 619.5698011599006
+#### surf+sift(l1) average match point distance : 0.06827942241661575
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+
+Detectors : surf / agast / brisk / fast / gftt / orb
+Descriptors : sift / surfext / freak / brisk (/daisy / surf)
+####---- Best but very slow ----####
+##################################### Detector : surf #####################################
+surf detect 1 exec time : 0.08793783187866211
+surf feature 1 count : 4828
+surf detect 2 exec time : 0.09747910499572754
+surf feature 2 count : 5026
+--------------------------------------- Descriptors ---------------------------------------
+####---- Slow/Best ----#### 4828
+time w/out matching : 4.019449711 # Very bad
+surf+sift(l1) compute 1 exec time : 1.830019474029541
+surf+sift(l1) compute 2 exec time : 1.8566572666168213
+surf+sift(l1) matching exec time : 1.2677063941955566
+#### surf+sift(l1) total time : 5.287156105 # Very bad
+#### surf+sift(l1) match count : 4828
+#### surf+sift(l1) average match distance : 619.5698011599006
+#### surf+sift(l1) average match point distance : 0.06827942241661575
+
+###---- Very good but slow ----###
+##################################### Detector : orb #####################################
+orb detect 1 exec time : 0.028715848922729492
+orb feature 1 count : 5000
+orb detect 2 exec time : 0.04647469520568848
+orb feature 2 count : 5000
+--------------------------------------- Descriptors ---------------------------------------
+time w/out matching : 2.187108278 # Very bad
+orb+surfext(l1) compute 1 exec time : 0.9146122932434082
+orb+surfext(l1) compute 2 exec time : 0.7357120513916016
+orb+surfext(l1) matching exec time : 2.4408538341522217
+#### orb+surfext(l1) total time : 4.627962112426758 # Very bad
+#### orb+surfext(l1) match count : 5000
+#### orb+surfext(l1) average match distance : 1.1317192969828844
+#### orb+surfext(l1) average match point distance : 0.14153097436134063
+
+###---- Good and fast ----###
+##################################### Detector : agast #####################################
+agast detect 1 exec time : 0.011312484741210938
+agast feature 1 count : 4342
+agast detect 2 exec time : 0.014745950698852539
+agast feature 2 count : 5004
+--------------------------------------- Descriptors ---------------------------------------
+####---- Good ----#### 3648 / 4342
+time w/out matching : 0.377013922 # Best
+agast+freak(H1) compute 1 exec time : 0.05032491683959961
+agast+freak(H1) compute 2 exec time : 0.053798675537109375
+agast+freak(H1) matching exec time : 0.3768002986907959
+#### agast+freak(H1) total time : 0.7538142204284668 # Good
+#### agast+freak(H1) match count : 3648
+#### agast+freak(H1) average match distance : 25.966008771929825
+#### agast+freak(H1) average match point distance : 0.2634197672843311
+agast+freak(H2) compute 1 exec time : 0.037526845932006836
+agast+freak(H2) compute 2 exec time : 0.03833651542663574
+agast+freak(H2) matching exec time : 0.4711418151855469
+#### agast+freak(H2) total time : 0.8145637512207031 # Ok
+#### agast+freak(H2) match count : 3648
+#### agast+freak(H2) average match distance : 24.77823464912281
+#### agast+freak(H2) average match point distance : 0.2478356841056148
+
+##################################### Detector : brisk #####################################
+brisk detect 1 exec time : 0.11311960220336914
+brisk feature 1 count : 4606
+brisk detect 2 exec time : 0.12835073471069336
+brisk feature 2 count : 4942
+--------------------------------------- Descriptors ---------------------------------------
+####---- OK ----#### 4280 / 4606
+time w/out matching : 0.618960381 # Good
+brisk+freak(H1) compute 1 exec time : 0.04649090766906738
+brisk+freak(H1) compute 2 exec time : 0.05585527420043945
+brisk+freak(H1) matching exec time : 0.5487427711486816
+#### brisk+freak(H1) total time : 1.1677031517028809 # Bad
+#### brisk+freak(H1) match count : 4280
+#### brisk+freak(H1) average match distance : 26.19158878504673
+#### brisk+freak(H1) average match point distance : 0.20988864945432825
+
+##################################### Detector : fast #####################################
+fast detect 1 exec time : 0.0069768428802490234
+fast feature 1 count : 4899
+fast detect 2 exec time : 0.014528512954711914
+fast feature 2 count : 5758
+--------------------------------------- Descriptors ---------------------------------------
+####---- OK ----#### 4092 / 4899
+time w/out matching : 0.633688927 # Good
+fast+freak(H1) compute 1 exec time : 0.04955625534057617
+fast+freak(H1) compute 2 exec time : 0.06183218955993652
+fast+freak(H1) matching exec time : 0.47318291664123535
+#### fast+freak(H1) total time : 1.1068718433380127 # Bad
+#### fast+freak(H1) match count : 4092
+#### fast+freak(H1) average match distance : 30.05962854349951
+#### fast+freak(H1) average match point distance : 0.4165608237816108
+
+##################################### Detector : gftt #####################################
+gftt detect 1 exec time : 0.050348758697509766
+gftt feature 1 count : 4749
+gftt detect 2 exec time : 0.059671640396118164
+gftt feature 2 count : 5189
+--------------------------------------- Descriptors ---------------------------------------
+####---- OK ----#### 3960 / 4749
+time w/out matching : 0.516549349 # Very good
+gftt+freak(H1) compute 1 exec time : 0.034746646881103516
+gftt+freak(H1) compute 2 exec time : 0.04377341270446777
+gftt+freak(H1) matching exec time : 0.2084202766418457
+#### gftt+freak(H1) total time : 0.7249696254730225 # Good
+#### gftt+freak(H1) match count : 3960
+#### gftt+freak(H1) average match distance : 26.13131313131313
+#### gftt+freak(H1) average match point distance : 0.3849883906094118
+gftt+freak(H2) compute 1 exec time : 0.034273386001586914
+gftt+freak(H2) compute 2 exec time : 0.04216361045837402
+gftt+freak(H2) matching exec time : 0.40463829040527344
+#### gftt+freak(H2) total time : 0.9188802242279053 # Ok
+#### gftt+freak(H2) match count : 3960
+#### gftt+freak(H2) average match distance : 24.957323232323233
+#### gftt+freak(H2) average match point distance : 0.3704472759763918
+
+##################################### Detector : orb #####################################
+orb detect 1 exec time : 0.028715848922729492
+orb feature 1 count : 5000
+orb detect 2 exec time : 0.04647469520568848
+orb feature 2 count : 5000
+--------------------------------------- Descriptors ---------------------------------------
+####---- OK ----#### 4556 / 5000
+time w/out matching : 0.626241446 # Good
+orb+brisk(H1) compute 1 exec time : 0.11281895637512207
+orb+brisk(H1) compute 2 exec time : 0.09690594673156738
+orb+brisk(H1) matching exec time : 0.3899660110473633
+#### orb+brisk(H1) total time : 1.0162074565887451 # Ok
+#### orb+brisk(H1) match count : 4556
+#### orb+brisk(H1) average match distance : 39.40122914837577
+#### orb+brisk(H1) average match point distance : 0.32914658885433973
+
+####---- OK ----#### 4799 / 5000
+time w/out matching : 0.495019436 # Very good
+orb+freak(H1) compute 1 exec time : 0.039581298828125
+orb+freak(H1) compute 2 exec time : 0.03803753852844238
+orb+freak(H1) matching exec time : 0.29714179039001465
+#### orb+freak(H1) total time : 0.792161226272583 # Ok
+#### orb+freak(H1) match count : 4799
+#### orb+freak(H1) average match distance : 22.91769118566368
+#### orb+freak(H1) average match point distance : 0.11903883290830261
+
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+
+# Combinations :
+Ultra Slow (Best) : 
+Very Slow : orb+surfext (0.14 in 1.65)
+Slow : agast+sift (0.24 in 0.51) or brisk+daisy (0.42 in 0.63)
+Medium : 
+
+
+# Detector Coverage :
+surf :  10 / 10
+agast : 8 / 10
+fast :  7 / 10
+brisk : 6 / 10
+orb :   3 / 10
+
+
+Slowest :
+- surf+sift (0.06 in 3.51 secs)     > - Very very very slow / + Best coverage and matches
+
+Medium :
+- brisk+daisy (0.42 in 0.63)
+
+Fast :
+- agast+daisy (0.67 in 0.46)
+- agast+sift (0.23 in 0.51)
+//- orb+daisy (0.32 in 0.51)          > - very low coverage
+
+Fastest : 
+- orb+brisk (0.46 in 0.19)          > - very low coverage
+
+Other :
+- surf+daisy (0.67 in 1.21)         > - Very slow / + Best coverage
+- orb+surf (0.14 in 1.65)           > Bad coverage
+##################################### Detector : agast #####################################
+agast detect 1 exec time : 0.016877412796020508
+agast detect 2 exec time : 0.015569686889648438
+agast feature 1 count : 4342
+agast feature 2 count : 5004
+-------------------------------------- agast+sift(l1) --------------------------------------
+agast+sift(l1) compute 1 exec time : 0.2262861728668213
+agast+sift(l1) compute 2 exec time : 0.25731444358825684
+agast+sift(l1) matching exec time : 1.13161039352417
+#### agast+sift(l1) detect+desc time : 0.5162076950073242
+#### agast+sift(l1) match count : 4342
+#### agast+sift(l1) average match distance : 618.1777982496545
+#### agast+sift(l1) average match point distance : 0.23997545995971006
+-------------------------------------- agast+daisy(l1) --------------------------------------
+agast+daisy(l1) compute 1 exec time : 0.21354198455810547
+agast+daisy(l1) compute 2 exec time : 0.21746444702148438
+agast+daisy(l1) matching exec time : 1.8143060207366943
+#### agast+daisy(l1) detect+desc time : 0.46363139152526855
+#### agast+daisy(l1) match count : 4342
+#### agast+daisy(l1) average match distance : 0.1448739041622131
+#### agast+daisy(l1) average match point distance : 0.6710631552511072
+
+##################################### Detector : brisk #####################################
+brisk detect 1 exec time : 0.08123922348022461
+brisk detect 2 exec time : 0.09236431121826172
+brisk feature 1 count : 4606
+brisk feature 2 count : 4942
+-------------------------------------- brisk+sift(l1) --------------------------------------
+OpenCV Error: Assertion failed (dsize.area() > 0 || (inv_scale_x > 0 && inv_scale_y > 0)) in resize, file /io/opencv/modules/imgproc/src/resize.cpp, line 4045
+#-#-# Error with brisk+sift(l1)
+-------------------------------------- brisk+surf(l1) --------------------------------------
+brisk+surf(l1) compute 1 exec time : 0.39137864112854004
+brisk+surf(l1) compute 2 exec time : 0.3375434875488281
+brisk+surf(l1) matching exec time : 0.5788965225219727
+#### brisk+surf(l1) detect+desc time : 0.9026281833648682
+#### brisk+surf(l1) match count : 4606
+#### brisk+surf(l1) average match distance : 0.8097047614167423
+#### brisk+surf(l1) average match point distance : 1.0749225242144684
+-------------------------------------- brisk+surfext(l1) --------------------------------------
+brisk+surfext(l1) compute 1 exec time : 0.39261937141418457
+brisk+surfext(l1) compute 2 exec time : 0.35015249252319336
+brisk+surfext(l1) matching exec time : 1.4376330375671387
+#### brisk+surfext(l1) detect+desc time : 0.916468620300293
+#### brisk+surfext(l1) match count : 4606
+#### brisk+surfext(l1) average match distance : 1.5620849087067625
+#### brisk+surfext(l1) average match point distance : 0.9196613999306577
+-------------------------------------- brisk+daisy(l1) --------------------------------------
+brisk+daisy(l1) compute 1 exec time : 0.21319866180419922
+brisk+daisy(l1) compute 2 exec time : 0.2407362461090088
+brisk+daisy(l1) matching exec time : 1.950669527053833
+#### brisk+daisy(l1) detect+desc time : 0.6276357173919678
+#### brisk+daisy(l1) match count : 4606
+#### brisk+daisy(l1) average match distance : 0.1430789711104671
+#### brisk+daisy(l1) average match point distance : 0.4188060477384183
+
+##################################### Detector : fast #####################################
+fast detect 1 exec time : 0.003922700881958008
+fast detect 2 exec time : 0.005051136016845703
+fast feature 1 count : 4899
+fast feature 2 count : 5758
+-------------------------------------- fast+sift(l1) --------------------------------------
+fast+sift(l1) compute 1 exec time : 0.24893760681152344
+fast+sift(l1) compute 2 exec time : 0.289539098739624
+fast+sift(l1) matching exec time : 1.4730024337768555
+#### fast+sift(l1) detect+desc time : 0.5475373268127441
+#### fast+sift(l1) match count : 4899
+#### fast+sift(l1) average match distance : 728.8905899163094
+#### fast+sift(l1) average match point distance : 0.4693515998477898
+-------------------------------------- fast+daisy(l1) --------------------------------------
+fast+daisy(l1) compute 1 exec time : 0.22832226753234863
+fast+daisy(l1) compute 2 exec time : 0.2379293441772461
+fast+daisy(l1) matching exec time : 2.462692975997925
+#### fast+daisy(l1) detect+desc time : 0.47532081604003906
+#### fast+daisy(l1) match count : 4899
+#### fast+daisy(l1) average match distance : 0.16197793246553893
+#### fast+daisy(l1) average match point distance : 1.0195269548073238
+
+##################################### Detector : orb #####################################
+orb detect 1 exec time : 0.018344402313232422
+orb detect 2 exec time : 0.021416902542114258
+orb feature 1 count : 5936
+orb feature 2 count : 5966
+-------------------------------------- orb+sift(l1) --------------------------------------
+orb+sift(l1) compute 1 exec time : 1.6850228309631348
+orb+sift(l1) compute 2 exec time : 1.8278732299804688
+orb+sift(l1) matching exec time : 1.862182855606079
+#### orb+sift(l1) detect+desc time : 3.5527515411376953
+#### orb+sift(l1) match count : 5936
+#### orb+sift(l1) average match distance : 601.2400606469002
+#### orb+sift(l1) average match point distance : 0.1707934923791668
+-------------------------------------- orb+surf(l1) --------------------------------------
+orb+surf(l1) compute 1 exec time : 0.5594549179077148
+orb+surf(l1) compute 2 exec time : 0.5888495445251465
+orb+surf(l1) matching exec time : 0.9051940441131592
+#### orb+surf(l1) detect+desc time : 1.1881694793701172
+#### orb+surf(l1) match count : 5936
+#### orb+surf(l1) average match distance : 0.5246833545074866
+#### orb+surf(l1) average match point distance : 0.23023334253369895
+-------------------------------------- orb+surfext(l1) --------------------------------------
+orb+surfext(l1) compute 1 exec time : 0.6788971424102783
+orb+surfext(l1) compute 2 exec time : 0.9262993335723877
+orb+surfext(l1) matching exec time : 2.357236862182617
+#### orb+surfext(l1) detect+desc time : 1.6451263427734375
+#### orb+surfext(l1) match count : 5936
+#### orb+surfext(l1) average match distance : 1.1693531395415613
+#### orb+surfext(l1) average match point distance : 0.1410985800567155
+-------------------------------------- orb+brisk(H1) --------------------------------------
+orb+brisk(H1) compute 1 exec time : 0.06968379020690918
+orb+brisk(H1) compute 2 exec time : 0.08237648010253906
+orb+brisk(H1) matching exec time : 0.2861759662628174
+#### orb+brisk(H1) detect+desc time : 0.19193029403686523
+#### orb+brisk(H1) match count : 5365
+#### orb+brisk(H1) average match distance : 40.403168685927305
+#### orb+brisk(H1) average match point distance : 0.45618015157200326
+-------------------------------------- orb+daisy(l1) --------------------------------------
+orb+daisy(l1) compute 1 exec time : 0.23559284210205078
+orb+daisy(l1) compute 2 exec time : 0.23872089385986328
+orb+daisy(l1) matching exec time : 3.1019675731658936
+#### orb+daisy(l1) detect+desc time : 0.5141711235046387
+#### orb+daisy(l1) match count : 5936
+#### orb+daisy(l1) average match distance : 0.1392735253536736
+#### orb+daisy(l1) average match point distance : 0.32202014724085415
+
+##################################### Detector : surf #####################################
+[ INFO:0] Initialize OpenCL runtime...
+surf detect 1 exec time : 0.09880876541137695
+surf detect 2 exec time : 0.10351181030273438
+surf feature 1 count : 4828
+surf feature 2 count : 5026
+-------------------------------------- surf+sift(l1) --------------------------------------
+surf+sift(l1) compute 1 exec time : 1.6109042167663574
+surf+sift(l1) compute 2 exec time : 1.701993703842163
+surf+sift(l1) matching exec time : 1.2435705661773682
+#### surf+sift(l1) detect+desc time : 3.5153045654296875
+#### surf+sift(l1) match count : 4828
+#### surf+sift(l1) average match distance : 619.5698011599006
+#### surf+sift(l1) average match point distance : 0.06827942241661575
+-------------------------------------- surf+daisy(l1) --------------------------------------
+surf+daisy(l1) compute 1 exec time : 0.23059725761413574
+surf+daisy(l1) compute 2 exec time : 0.23198223114013672
+surf+daisy(l1) matching exec time : 2.018162250518799
+#### surf+daisy(l1) detect+desc time : 0.6650002002716064
+#### surf+daisy(l1) match count : 4828
+#### surf+daisy(l1) average match distance : 0.09752070538183812
+#### surf+daisy(l1) average match point distance : 1.209730355079914
+
+
+
+
+
+
+
+
+
+
+## Best point distance :
+
+surf+sift   (l1) : 0.010969673006710035
+-time : 6.1635531187057495
+-match : 77.029826014913%
+
+orb+surfext (l1) : 0.02683368752937273
+-time : 1.7049665927886963
+-match : 75.5053908355795%
+
+#orb+sift    (l1) : 0.035168099361154774#-time : 5.921496272087097#-match : 70.21563342318059%#            (l2) : 0.05145858152096482#-time : 5.905741930007935#-match : 70.28301886792453%
+#orb+surf    (l2) : 0.05293814214602805#-time : 1.6549581289291382#-match : 73.51752021563343%#            (l1) : 0.05538821878942559#-time : 1.7573458671569824#-match : 75.57277628032345%
+
+orb+freak   (H2) : 0.09598247396097286
+-time : 0.153471040725708
+-match : 57.85022026431717%
+            (H1) : 0.10356802675394645
+-time : 0.16787166595458985
+-match : 57.74449339207048%
+
+gftt+freak  (H2) : 0.12754401453461187
+-time : 0.2613340377807617
+-match : 80.02525252525253%
+            (H1) : 0.13328734896696343
+-time : 0.26209135055541993
+-match : 80.15151515151516%
+
+#orb+latch   (H1) : 0.14543071396726062#-time : 1.1834076642990112#-match : 52.66172506738545%
+
+orb+brisk   (H1) : 0.1476274300665023
+-time : 0.24177138805389403
+-match : 74.81826654240447%
+            (H2) : 0.181900168672253
+-time : 0.24435930252075194
+-match : 74.74370922646784%
+
+agast+freak (H1) : 0.15527825818315122
+-time : 0.12271184921264648
+-match : 78.70065789473685%
+
+#brisk+daisy (l1) : 0.15855845363851545#-time : 0.9208641290664673#-match : 70.19105514546244%
+#agast+sift  (l1) : 0.16028207521652263#-time : 0.7432317733764648#-match : 79.59465684016583%
+#brisk+freak (H2) : 0.17178334835136858#-time : 0.37753183841705323#-match : 68.66822429906541%#            (H1) : 0.18201171232292482#-time : 0.3700209856033325#-match : 68.66822429906541%
+#orb+daisy   (l1) : 0.18805872541732177#-time : 0.5739036560058594#-match : 61.03436657681941%
+
+
+
+## Best future time :
+
+fast+lucid  (H1) : 0.042163419723510745
+-match : 65.4827515819555%
+-distance : 6.425286571380184
+            (H2) : 0.053916430473327635
+-match : 65.99305980812412%
+-distance : 6.069047645322121
+
+agast+lucid (H2) : 0.06826212406158447
+-match : 66.46706586826348%
+-distance : 5.4818525264380265
+            (H1) : 0.0705939769744873
+-match : 65.91432519576233%
+-distance : 5.895058786347927
+
+orb+lucid   (H1) : 0.07485067844390869
+-match : 51.549865229110516%
+-distance : 3.9615567499961037
+            (H2) : 0.08245644569396973
+-match : 52.358490566037744%
+-distance : 3.619158756360679
+
+fast+brief  (H1) : 0.0815732717514038
+-match : 74.63831652783867%
+-distance : 0.9408600102144176
+            (H2) : 0.09262866973876953
+-match : 74.39719421306444%
+-distance : 0.9447240862994883
+
+fast+orb    (H1) : 0.09693810939788819
+-match : 73.98409893992934%
+-distance : 1.4349203457538693
+            (H2) : 0.09703047275543213
+-match : 73.63074204946997%
+-distance : 1.415531464887578
+
+fast+surf   (l1) : 0.10028886795043945
+-match : 73.68850785874669%
+-distance : 3.541821683648388
+
+agast+surf  (H2) : 0.1036339282989502
+-match : 74.27452786734224%
+-distance : 3.1875560002751495
+            (H1) : 0.10544054508209229
+-match : 75.61031782588668%
+-distance : 2.3295043232968298
+
+fast+freak  (H1) : 0.10441539287567139
+-match : 75.78201368523949%
+-distance : 0.2435109212828598
+            (H2) : 0.11559548377990722
+-match : 75.63538611925709%
+-distance : 0.2210250821466323
+
+agast+orb   (H2) : 0.11610398292541504
+-match : 79.00249376558604%
+-distance : 0.7509561962884533
+            (H1) : 0.12799270153045655
+-match : 78.90274314214464%
+-distance : 0.6831253292246097
+
+fast+surfext(l2) : 0.12089498043060302
+-match : 72.42294345784855%
+-distance : 4.152426607414238
+            (l1) : 0.12939369678497314
+-match : 72.95366401306389%
+-distance : 3.3164132647988827
+
+agast+brief (H1) : 0.12123925685882568
+-match : 78.86661717396683%
+-distance : 0.5714535403096396
+            (H2) : 0.13164110183715821
+-match : 78.96560257362039%
+-distance : 0.6009605839182637
+
+agast+freak (H1) : 0.12271184921264648
+-match : 78.70065789473685%
+-distance : 0.15527825818315122
+            (H2) : 0.13217666149139404
+-match : 79.00219298245614%
+-distance : 0.16249087032324938
+
+star+lucid  (H2) : 0.12486000061035156
+-match : 64.25295679459329%
+-distance : 4.999151300510835
+
+agast+surfext(l2) : 0.1252373695373535
+-match : 73.60663288807001%
+-distance : 3.4026552213644305
+            (l1) : 0.15053298473358154 (???)
+-match : 75.49516351911562%
+-distance : 2.3995119810615475
+
+orb+brief   (H1) : 0.13327689170837403
+-match : 53.28504043126685%
+-distance : 0.28924219749919367
+            (H2) : 0.13485221862792968
+-match : 53.18396226415094%
+-distance : 0.2884001826823395
+
+Best :
+~0.02 (0.054) ~0.015
+fast+lucid : 6.069047645322121 (65.482752%)
+
+~0.032 (0.068) ~0.024
+agast+lucid : 5.4818525264380265 (66.467066%)
+~0.032 (0.100) ~0.020
+fast+surf : 3.541821683648388 (73.688508%)
+
+~0.038 (0.082) ~0.037
+orb+lucid : 3.619158756360679 (52.358491%)
+~0.038 (0.129) ~0.020
+fast+surfext : 3.3164132647988827 (72.953664%)
+
+~0.043 (0.105) ~0.030
+agast+surf : 2.3295043232968298 (75.610318%)
+
+~0.052 (0.097) ~0.020
+fast+orb : 1.415531464887578 (73.630742%)
+~0.052 (0.082) ~0.033
+fast+brief : 0.9408600102144176 (74.638317%)
+~0.052 (0.125) ~0.031
+agast+surfext : 2.3995119810615475 (75.495164%)
+
+~0.60 (0.116) ~0.029
+agast+orb : 0.6831253292246097 (78.902743%)
+
+~0.60 (0.121) ~0.039
+agast+brief : 0.5714535403096396 (78.866617%)
+
+#### Speed :
+## Detectors :
+fast
+agast
+orb <- sparse
+## Descriptors :
+#lucid (H2)      ~0.015 / ~0.024
+#6.069047645322121 / 5.4818525264380265
+surf (l1)       ~0.020 / ~0.030
+3.541821683648388 / 2.3295043232968298
+#surfext (l1)    ~0.020 / ~0.031
+#3.3164132647988827 / 2.3995119810615475
+orb (H1/H2)     ~0.020 / ~0.029
+1.415531464887578 / 0.6831253292246097
+brief (H1)      ~0.033 / ~0.039
+0.9408600102144176 / 0.5714535403096396
+
+fast+brief : 0.0815732717514038 / 0.9408600102144176
+fast+orb : 0.09693810939788819 / 1.4349203457538693
+fast+freak : 0.10441539287567139 / 0.2435109212828598
+agast+orb : 0.11610398292541504 / 0.7509561962884533
+
+agast+brief (H1) : 0.12123925685882568
+-match : 78.86661717396683%
+-distance : 0.5714535403096396
+            (H2) : 0.13164110183715821
+-match : 78.96560257362039%
+-distance : 0.6009605839182637
+
+agast+freak (H1) : 0.12271184921264648
+-match : 78.70065789473685%
+-distance : 0.15527825818315122
+            (H2) : 0.13217666149139404
+-match : 79.00219298245614%
+-distance : 0.16249087032324938
+
+
+
+orb+brief : 0.13327689170837403 / 0.28924219749919367
+
+
+Best results :
+surf+sift (~99.2%, ~1.76)
+
+Best to fastest :
+agast+brief (~92.3%, ~0.039)
+fast+brief (~88.3%, ~0.033)
+agast+orb (~87.4%, ~0.029)
+fast+orb (~82.1%, ~0.020)
+agast+surf (~72.8%, ~0.030)
+fast+surf (~68.0%, ~0.020)
+
+Other :
+orb+surfext (~99.3, ~0.226)
+orb+surf (~98.9, ~0.206)
+orb+brief (~96.5, ~0.060)
+#orb+orb (~86.5%, ~0.056)

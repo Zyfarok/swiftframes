@@ -1,0 +1,1841 @@
+##################################### Detector : sift #####################################
+sift detect 1 exec time : 0.2753276824951172
+sift detect 2 exec time : 0.28936028480529785
+sift feature 1 count : 4495
+sift feature 2 count : 4860
+-------------------------------------- sift+sift(l1) --------------------------------------
+sift+sift(l1) compute 1 exec time : 0.3124067783355713
+sift+sift(l1) compute 2 exec time : 0.2931811809539795
+sift+sift(l1) matching exec time : 1.1113815307617188
+sift+sift(l1) matching expected time : 0.059050559997558594
+sift+sift(l1) detect+desc time : 1.1703708171844482
+sift+sift(l1) future time : 1.176275873184204
+sift+sift(l1) desc : 100.000000%, match : 100.000000%, final : 100.000000%
+sift+sift(l1) avg match distance : 930.653170189099
+sift+sift(l1) probably good matches (<60px) : 3184, 70.834260% of matches, 70.834260% of keypoints
+-------------------------------------- sift+sift(l2) --------------------------------------
+sift+sift(l2) compute 1 exec time : 0.3456103801727295
+sift+sift(l2) compute 2 exec time : 0.3713490962982178
+sift+sift(l2) matching exec time : 1.6359286308288574
+sift+sift(l2) matching expected time : 0.10941123962402344
+sift+sift(l2) detect+desc time : 1.2817308902740479
+sift+sift(l2) future time : 1.2926720142364503
+sift+sift(l2) desc : 100.000000%, match : 100.000000%, final : 100.000000%
+sift+sift(l2) avg match distance : 147.91298012919103
+sift+sift(l2) probably good matches (<60px) : 3143, 69.922136% of matches, 69.922136% of keypoints
+-------------------------------------- sift+surf(l1) --------------------------------------
+[ INFO:0] Initialize OpenCL runtime...
+sift+surf(l1) compute 1 exec time : 0.031035184860229492
+sift+surf(l1) compute 2 exec time : 0.039189815521240234
+sift+surf(l1) matching exec time : 0.8057122230529785
+sift+surf(l1) matching expected time : 0.04302620887756348
+sift+surf(l1) detect+desc time : 0.6350176334381104
+sift+surf(l1) future time : 0.6393202543258667
+sift+surf(l1) desc : 100.000000%, match : 100.000000%, final : 100.000000%
+sift+surf(l1) avg match distance : 1.096617214894699
+sift+surf(l1) probably good matches (<60px) : 1958, 43.559511% of matches, 43.559511% of keypoints
+-------------------------------------- sift+surf(l2) --------------------------------------
+sift+surf(l2) compute 1 exec time : 0.03538870811462402
+sift+surf(l2) compute 2 exec time : 0.03561830520629883
+sift+surf(l2) matching exec time : 0.8805861473083496
+sift+surf(l2) matching expected time : 0.0414433479309082
+sift+surf(l2) detect+desc time : 0.6358983516693115
+sift+surf(l2) future time : 0.6400426864624024
+sift+surf(l2) desc : 100.000000%, match : 100.000000%, final : 100.000000%
+sift+surf(l2) avg match distance : 0.2229396207987417
+sift+surf(l2) probably good matches (<60px) : 1762, 39.199110% of matches, 39.199110% of keypoints
+-------------------------------------- sift+surfext(l1) --------------------------------------
+sift+surfext(l1) compute 1 exec time : 0.04165482521057129
+sift+surfext(l1) compute 2 exec time : 0.05017232894897461
+sift+surfext(l1) matching exec time : 1.7867817878723145
+sift+surfext(l1) matching expected time : 0.09658122062683105
+sift+surfext(l1) detect+desc time : 0.6566095352172852
+sift+surfext(l1) future time : 0.6662676572799683
+sift+surfext(l1) desc : 100.000000%, match : 100.000000%, final : 100.000000%
+sift+surfext(l1) avg match distance : 1.7813465173554102
+sift+surfext(l1) probably good matches (<60px) : 2002, 44.538376% of matches, 44.538376% of keypoints
+-------------------------------------- sift+surfext(l2) --------------------------------------
+sift+surfext(l2) compute 1 exec time : 0.039758920669555664
+sift+surfext(l2) compute 2 exec time : 0.04489779472351074
+sift+surfext(l2) matching exec time : 1.7548763751983643
+sift+surfext(l2) matching expected time : 0.12340259552001953
+sift+surfext(l2) detect+desc time : 0.649486780166626
+sift+surfext(l2) future time : 0.6618270397186279
+sift+surfext(l2) desc : 100.000000%, match : 100.000000%, final : 100.000000%
+sift+surfext(l2) avg match distance : 0.29388549010185433
+sift+surfext(l2) probably good matches (<60px) : 1796, 39.955506% of matches, 39.955506% of keypoints
+-------------------------------------- sift+brisk(H1) --------------------------------------
+sift+brisk(H1) compute 1 exec time : 0.08787822723388672
+sift+brisk(H1) compute 2 exec time : 0.09834694862365723
+sift+brisk(H1) matching exec time : 0.31833600997924805
+sift+brisk(H1) matching expected time : 0.020641088485717773
+sift+brisk(H1) detect+desc time : 0.7510135173797607
+sift+brisk(H1) future time : 0.7530776262283325
+sift+brisk(H1) desc : 97.263626%, match : 100.000000%, final : 97.263626%
+sift+brisk(H1) avg match distance : 49.052150045745655
+sift+brisk(H1) probably good matches (<60px) : 2933, 67.086002% of matches, 65.250278% of keypoints
+-------------------------------------- sift+brisk(H2) --------------------------------------
+sift+brisk(H2) compute 1 exec time : 0.07888579368591309
+sift+brisk(H2) compute 2 exec time : 0.07801532745361328
+sift+brisk(H2) matching exec time : 0.7254014015197754
+sift+brisk(H2) matching expected time : 0.04324769973754883
+sift+brisk(H2) detect+desc time : 0.7216784954071045
+sift+brisk(H2) future time : 0.7260032653808594
+sift+brisk(H2) desc : 97.263626%, match : 100.000000%, final : 97.263626%
+sift+brisk(H2) avg match distance : 42.30146386093321
+sift+brisk(H2) probably good matches (<60px) : 2898, 66.285453% of matches, 64.471635% of keypoints
+-------------------------------------- sift+orb(H1) --------------------------------------
+#-#-# Error with sift+orb(H1)
+-------------------------------------- sift+orb2(H1) --------------------------------------
+#-#-# Error with sift+orb2(H1)
+-------------------------------------- sift+orb(H2) --------------------------------------
+#-#-# Error with sift+orb(H2)
+-------------------------------------- sift+boost(l1) --------------------------------------
+sift+boost(l1) compute 1 exec time : 0.8623795509338379
+sift+boost(l1) compute 2 exec time : 1.4938836097717285
+sift+boost(l1) matching exec time : 0.7199611663818359
+sift+boost(l1) matching expected time : 0.039940834045410156
+sift+boost(l1) detect+desc time : 2.921053409576416
+sift+boost(l1) future time : 2.925047492980957
+sift+boost(l1) desc : 100.000000%, match : 100.000000%, final : 100.000000%
+sift+boost(l1) avg match distance : 630.9450500556173
+sift+boost(l1) probably good matches (<60px) : 3401, 75.661846% of matches, 75.661846% of keypoints
+-------------------------------------- sift+boost(l2) --------------------------------------
+sift+boost(l2) compute 1 exec time : 1.0874543190002441
+sift+boost(l2) compute 2 exec time : 1.3059053421020508
+sift+boost(l2) matching exec time : 0.7684190273284912
+sift+boost(l2) matching expected time : 0.04301166534423828
+sift+boost(l2) detect+desc time : 2.9581377506256104
+sift+boost(l2) future time : 2.9624389171600343
+sift+boost(l2) desc : 100.000000%, match : 100.000000%, final : 100.000000%
+sift+boost(l2) avg match distance : 211.81451815906436
+sift+boost(l2) probably good matches (<60px) : 3055, 67.964405% of matches, 67.964405% of keypoints
+-------------------------------------- sift+brief(H1) --------------------------------------
+sift+brief(H1) compute 1 exec time : 0.03748178482055664
+sift+brief(H1) compute 2 exec time : 0.05629849433898926
+sift+brief(H1) matching exec time : 0.382814884185791
+sift+brief(H1) matching expected time : 0.022430896759033203
+sift+brief(H1) detect+desc time : 0.658574104309082
+sift+brief(H1) future time : 0.6608171939849854
+sift+brief(H1) desc : 93.770857%, match : 100.000000%, final : 93.770857%
+sift+brief(H1) avg match distance : 17.459549228944248
+sift+brief(H1) probably good matches (<60px) : 3626, 86.026097% of matches, 80.667408% of keypoints
+-------------------------------------- sift+brief(H2) --------------------------------------
+sift+brief(H2) compute 1 exec time : 0.0425257682800293
+sift+brief(H2) compute 2 exec time : 0.06543636322021484
+sift+brief(H2) matching exec time : 0.4451720714569092
+sift+brief(H2) matching expected time : 0.0259091854095459
+sift+brief(H2) detect+desc time : 0.6727564334869385
+sift+brief(H2) future time : 0.6753473520278931
+sift+brief(H2) desc : 93.770857%, match : 100.000000%, final : 93.770857%
+sift+brief(H2) avg match distance : 16.386714116251483
+sift+brief(H2) probably good matches (<60px) : 3599, 85.385528% of matches, 80.066741% of keypoints
+-------------------------------------- sift+daisy(l1) --------------------------------------
+sift+daisy(l1) compute 1 exec time : 0.2932915687561035
+sift+daisy(l1) compute 2 exec time : 0.2658967971801758
+sift+daisy(l1) matching exec time : 3.562507152557373
+sift+daisy(l1) matching expected time : 0.16057157516479492
+sift+daisy(l1) detect+desc time : 1.123962163925171
+sift+daisy(l1) future time : 1.1400193214416503
+sift+daisy(l1) desc : 100.000000%, match : 100.000000%, final : 100.000000%
+sift+daisy(l1) avg match distance : 0.1264551140654944
+sift+daisy(l1) probably good matches (<60px) : 4173, 92.836485% of matches, 92.836485% of keypoints
+-------------------------------------- sift+daisy(l2) --------------------------------------
+sift+daisy(l2) compute 1 exec time : 0.2574019432067871
+sift+daisy(l2) compute 2 exec time : 0.27714014053344727
+sift+daisy(l2) matching exec time : 3.5208702087402344
+sift+daisy(l2) matching expected time : 0.18148279190063477
+sift+daisy(l2) detect+desc time : 1.099318504333496
+sift+daisy(l2) future time : 1.1174667835235597
+sift+daisy(l2) desc : 100.000000%, match : 100.000000%, final : 100.000000%
+sift+daisy(l2) avg match distance : 0.012966972091088892
+sift+daisy(l2) probably good matches (<60px) : 4094, 91.078977% of matches, 91.078977% of keypoints
+-------------------------------------- sift+freak(H1) --------------------------------------
+sift+freak(H1) compute 1 exec time : 0.04052925109863281
+sift+freak(H1) compute 2 exec time : 0.050313711166381836
+sift+freak(H1) matching exec time : 0.29421234130859375
+sift+freak(H1) matching expected time : 0.024595975875854492
+sift+freak(H1) detect+desc time : 0.6556353569030762
+sift+freak(H1) future time : 0.6580949544906616
+sift+freak(H1) desc : 85.005562%, match : 100.000000%, final : 85.005562%
+sift+freak(H1) avg match distance : 30.22638052865742
+sift+freak(H1) probably good matches (<60px) : 3614, 94.582570% of matches, 80.400445% of keypoints
+-------------------------------------- sift+freak(H2) --------------------------------------
+sift+freak(H2) compute 1 exec time : 0.06093716621398926
+sift+freak(H2) compute 2 exec time : 0.06173443794250488
+sift+freak(H2) matching exec time : 0.6719143390655518
+sift+freak(H2) matching expected time : 0.045526742935180664
+sift+freak(H2) detect+desc time : 0.6874668598175049
+sift+freak(H2) future time : 0.6920195341110229
+sift+freak(H2) desc : 85.005562%, match : 100.000000%, final : 85.005562%
+sift+freak(H2) avg match distance : 28.661868620779902
+sift+freak(H2) probably good matches (<60px) : 3617, 94.661083% of matches, 80.467186% of keypoints
+-------------------------------------- sift+latch(H1) --------------------------------------
+sift+latch(H1) compute 1 exec time : 0.394970178604126
+sift+latch(H1) compute 2 exec time : 0.44678759574890137
+sift+latch(H1) matching exec time : 0.26367878913879395
+sift+latch(H1) matching expected time : 0.020328998565673828
+sift+latch(H1) detect+desc time : 1.4065284729003906
+sift+latch(H1) future time : 1.408561372756958
+sift+latch(H1) desc : 94.037820%, match : 100.000000%, final : 94.037820%
+sift+latch(H1) avg match distance : 28.86302342086586
+sift+latch(H1) probably good matches (<60px) : 3905, 92.382304% of matches, 86.874305% of keypoints
+-------------------------------------- sift+latch(H2) --------------------------------------
+sift+latch(H2) compute 1 exec time : 0.3933560848236084
+sift+latch(H2) compute 2 exec time : 0.4546635150909424
+sift+latch(H2) matching exec time : 0.3538699150085449
+sift+latch(H2) matching expected time : 0.025756359100341797
+sift+latch(H2) detect+desc time : 1.4127891063690186
+sift+latch(H2) future time : 1.4153647422790527
+sift+latch(H2) desc : 94.037820%, match : 100.000000%, final : 94.037820%
+sift+latch(H2) avg match distance : 26.216229004021766
+sift+latch(H2) probably good matches (<60px) : 3895, 92.145730% of matches, 86.651835% of keypoints
+-------------------------------------- sift+lucid(H1) --------------------------------------
+sift+lucid(H1) compute 1 exec time : 0.011582136154174805
+sift+lucid(H1) compute 2 exec time : 0.010105609893798828
+sift+lucid(H1) matching exec time : 0.5515491962432861
+sift+lucid(H1) matching expected time : 0.026365041732788086
+sift+lucid(H1) detect+desc time : 0.5864701271057129
+sift+lucid(H1) future time : 0.5891066312789917
+sift+lucid(H1) desc : 100.000000%, match : 100.000000%, final : 100.000000%
+sift+lucid(H1) avg match distance : 32.98264738598443
+sift+lucid(H1) probably good matches (<60px) : 1715, 38.153504% of matches, 38.153504% of keypoints
+-------------------------------------- sift+lucid(H2) --------------------------------------
+sift+lucid(H2) compute 1 exec time : 0.011217832565307617
+sift+lucid(H2) compute 2 exec time : 0.01240086555480957
+sift+lucid(H2) matching exec time : 0.4485757350921631
+sift+lucid(H2) matching expected time : 0.023993253707885742
+sift+lucid(H2) detect+desc time : 0.5884132385253906
+sift+lucid(H2) future time : 0.5908125638961792
+sift+lucid(H2) desc : 100.000000%, match : 100.000000%, final : 100.000000%
+sift+lucid(H2) avg match distance : 24.654505005561735
+sift+lucid(H2) probably good matches (<60px) : 1938, 43.114572% of matches, 43.114572% of keypoints
+##################################### Detector : surf #####################################
+surf detect 1 exec time : 0.2808551788330078
+surf detect 2 exec time : 0.16841864585876465
+surf feature 1 count : 4828
+surf feature 2 count : 5026
+-------------------------------------- surf+sift(l1) --------------------------------------
+surf+sift(l1) compute 1 exec time : 2.9302453994750977
+surf+sift(l1) compute 2 exec time : 3.1881606578826904
+surf+sift(l1) matching exec time : 2.1857855319976807
+surf+sift(l1) matching expected time : 0.08289146423339844
+surf+sift(l1) detect+desc time : 6.567786693572998
+surf+sift(l1) future time : 6.576075839996338
+surf+sift(l1) desc : 100.000000%, match : 100.000000%, final : 100.000000%
+surf+sift(l1) avg match distance : 619.5698011599006
+surf+sift(l1) probably good matches (<60px) : 4790, 99.212925% of matches, 99.212925% of keypoints
+-------------------------------------- surf+sift(l2) --------------------------------------
+surf+sift(l2) compute 1 exec time : 2.7761991024017334
+surf+sift(l2) compute 2 exec time : 3.1115777492523193
+surf+sift(l2) matching exec time : 2.138468027114868
+surf+sift(l2) matching expected time : 0.08409690856933594
+surf+sift(l2) detect+desc time : 6.337164640426636
+surf+sift(l2) future time : 6.3455743312835695
+surf+sift(l2) desc : 100.000000%, match : 100.000000%, final : 100.000000%
+surf+sift(l2) avg match distance : 84.70646030476198
+surf+sift(l2) probably good matches (<60px) : 4787, 99.150787% of matches, 99.150787% of keypoints
+-------------------------------------- surf+surf(l1) --------------------------------------
+surf+surf(l1) compute 1 exec time : 0.22887253761291504
+surf+surf(l1) compute 2 exec time : 0.25068092346191406
+surf+surf(l1) matching exec time : 0.9180848598480225
+surf+surf(l1) matching expected time : 0.04630017280578613
+surf+surf(l1) detect+desc time : 0.9289383888244629
+surf+surf(l1) future time : 0.9335684061050415
+surf+surf(l1) desc : 100.000000%, match : 100.000000%, final : 100.000000%
+surf+surf(l1) avg match distance : 0.7332288151508153
+surf+surf(l1) probably good matches (<60px) : 4166, 86.288318% of matches, 86.288318% of keypoints
+-------------------------------------- surf+surf(l2) --------------------------------------
+surf+surf(l2) compute 1 exec time : 0.22959065437316895
+surf+surf(l2) compute 2 exec time : 0.24570178985595703
+surf+surf(l2) matching exec time : 0.8903353214263916
+surf+surf(l2) matching expected time : 0.04404473304748535
+surf+surf(l2) detect+desc time : 0.9246735572814941
+surf+surf(l2) future time : 0.9290780305862427
+surf+surf(l2) desc : 100.000000%, match : 100.000000%, final : 100.000000%
+surf+surf(l2) avg match distance : 0.1578217818370504
+surf+surf(l2) probably good matches (<60px) : 4045, 83.782104% of matches, 83.782104% of keypoints
+-------------------------------------- surf+surfext(l1) --------------------------------------
+surf+surfext(l1) compute 1 exec time : 0.2269439697265625
+surf+surfext(l1) compute 2 exec time : 0.23398804664611816
+surf+surfext(l1) matching exec time : 1.9805893898010254
+surf+surfext(l1) matching expected time : 0.10999774932861328
+surf+surfext(l1) detect+desc time : 0.9103231430053711
+surf+surfext(l1) future time : 0.9213229179382324
+surf+surfext(l1) desc : 100.000000%, match : 100.000000%, final : 100.000000%
+surf+surfext(l1) avg match distance : 1.448090724424824
+surf+surfext(l1) probably good matches (<60px) : 4178, 86.536868% of matches, 86.536868% of keypoints
+-------------------------------------- surf+surfext(l2) --------------------------------------
+surf+surfext(l2) compute 1 exec time : 0.2224733829498291
+surf+surfext(l2) compute 2 exec time : 0.2402176856994629
+surf+surfext(l2) matching exec time : 1.9622907638549805
+surf+surfext(l2) matching expected time : 0.10875058174133301
+surf+surfext(l2) detect+desc time : 0.9120776653289795
+surf+surfext(l2) future time : 0.9229527235031127
+surf+surfext(l2) desc : 100.000000%, match : 100.000000%, final : 100.000000%
+surf+surfext(l2) avg match distance : 0.24623087910756272
+surf+surfext(l2) probably good matches (<60px) : 4066, 84.217067% of matches, 84.217067% of keypoints
+-------------------------------------- surf+brisk(H1) --------------------------------------
+surf+brisk(H1) compute 1 exec time : 0.09421062469482422
+surf+brisk(H1) compute 2 exec time : 0.10422849655151367
+surf+brisk(H1) matching exec time : 0.31261777877807617
+surf+brisk(H1) matching expected time : 0.020001888275146484
+surf+brisk(H1) detect+desc time : 0.6478302478790283
+surf+brisk(H1) future time : 0.649830436706543
+surf+brisk(H1) desc : 91.673571%, match : 100.000000%, final : 91.673571%
+surf+brisk(H1) avg match distance : 51.19362855851785
+surf+brisk(H1) probably good matches (<60px) : 3267, 73.813827% of matches, 67.667771% of keypoints
+-------------------------------------- surf+brisk(H2) --------------------------------------
+surf+brisk(H2) compute 1 exec time : 0.09848737716674805
+surf+brisk(H2) compute 2 exec time : 0.09719395637512207
+surf+brisk(H2) matching exec time : 0.6833674907684326
+surf+brisk(H2) matching expected time : 0.04250383377075195
+surf+brisk(H2) detect+desc time : 0.6450772285461426
+surf+brisk(H2) future time : 0.6493276119232178
+surf+brisk(H2) desc : 91.673571%, match : 100.000000%, final : 91.673571%
+surf+brisk(H2) avg match distance : 43.91843651152282
+surf+brisk(H2) probably good matches (<60px) : 3246, 73.339358% of matches, 67.232809% of keypoints
+-------------------------------------- surf+orb(H1) --------------------------------------
+surf+orb(H1) compute 1 exec time : 0.04647493362426758
+surf+orb(H1) compute 2 exec time : 0.06374359130859375
+surf+orb(H1) matching exec time : 0.3333773612976074
+surf+orb(H1) matching expected time : 0.019040822982788086
+surf+orb(H1) detect+desc time : 0.5596075057983398
+surf+orb(H1) future time : 0.5615115880966186
+surf+orb(H1) desc : 95.981773%, match : 100.000000%, final : 95.981773%
+surf+orb(H1) avg match distance : 21.153646957272336
+surf+orb(H1) probably good matches (<60px) : 3560, 76.823479% of matches, 73.736537% of keypoints
+-------------------------------------- surf+orb2(H1) --------------------------------------
+surf+orb2(H1) compute 1 exec time : 0.045125722885131836
+surf+orb2(H1) compute 2 exec time : 0.0489649772644043
+surf+orb2(H1) matching exec time : 0.3646810054779053
+surf+orb2(H1) matching expected time : 0.018146038055419922
+surf+orb2(H1) detect+desc time : 0.5434751510620117
+surf+orb2(H1) future time : 0.5452897548675537
+surf+orb2(H1) desc : 95.981773%, match : 100.000000%, final : 95.981773%
+surf+orb2(H1) avg match distance : 21.153646957272336
+surf+orb2(H1) probably good matches (<60px) : 3560, 76.823479% of matches, 73.736537% of keypoints
+-------------------------------------- surf+orb(H2) --------------------------------------
+surf+orb(H2) compute 1 exec time : 0.05628657341003418
+surf+orb(H2) compute 2 exec time : 0.07645487785339355
+surf+orb(H2) matching exec time : 0.449413537979126
+surf+orb(H2) matching expected time : 0.023688316345214844
+surf+orb(H2) detect+desc time : 0.5821506977081299
+surf+orb(H2) future time : 0.5845195293426514
+surf+orb(H2) desc : 95.981773%, match : 100.000000%, final : 95.981773%
+surf+orb(H2) avg match distance : 19.753129046180405
+surf+orb(H2) probably good matches (<60px) : 3540, 76.391886% of matches, 73.322287% of keypoints
+-------------------------------------- surf+boost(l1) --------------------------------------
+surf+boost(l1) compute 1 exec time : 0.9161989688873291
+surf+boost(l1) compute 2 exec time : 1.1379578113555908
+surf+boost(l1) matching exec time : 0.7302687168121338
+surf+boost(l1) matching expected time : 0.0363314151763916
+surf+boost(l1) detect+desc time : 2.5035510063171387
+surf+boost(l1) future time : 2.507184147834778
+surf+boost(l1) desc : 100.000000%, match : 100.000000%, final : 100.000000%
+surf+boost(l1) avg match distance : 629.1267605633802
+surf+boost(l1) probably good matches (<60px) : 3335, 69.076222% of matches, 69.076222% of keypoints
+-------------------------------------- surf+boost(l2) --------------------------------------
+surf+boost(l2) compute 1 exec time : 0.7416987419128418
+surf+boost(l2) compute 2 exec time : 0.8374927043914795
+surf+boost(l2) matching exec time : 0.7360095977783203
+surf+boost(l2) matching expected time : 0.034207820892333984
+surf+boost(l2) detect+desc time : 2.0285682678222656
+surf+boost(l2) future time : 2.031989049911499
+surf+boost(l2) desc : 100.000000%, match : 100.000000%, final : 100.000000%
+surf+boost(l2) avg match distance : 211.0804052282782
+surf+boost(l2) probably good matches (<60px) : 2961, 61.329743% of matches, 61.329743% of keypoints
+-------------------------------------- surf+brief(H1) --------------------------------------
+surf+brief(H1) compute 1 exec time : 0.04108619689941406
+surf+brief(H1) compute 2 exec time : 0.04753708839416504
+surf+brief(H1) matching exec time : 0.32508015632629395
+surf+brief(H1) matching expected time : 0.018161535263061523
+surf+brief(H1) detect+desc time : 0.5380122661590576
+surf+brief(H1) future time : 0.5398284196853638
+surf+brief(H1) desc : 96.789561%, match : 100.000000%, final : 96.789561%
+surf+brief(H1) avg match distance : 16.360154076610314
+surf+brief(H1) probably good matches (<60px) : 3847, 82.323989% of matches, 79.681027% of keypoints
+-------------------------------------- surf+brief(H2) --------------------------------------
+surf+brief(H2) compute 1 exec time : 0.04406023025512695
+surf+brief(H2) compute 2 exec time : 0.04686450958251953
+surf+brief(H2) matching exec time : 0.40601301193237305
+surf+brief(H2) matching expected time : 0.023239612579345703
+surf+brief(H2) detect+desc time : 0.5403151512145996
+surf+brief(H2) future time : 0.5426391124725342
+surf+brief(H2) desc : 96.789561%, match : 100.000000%, final : 96.789561%
+surf+brief(H2) avg match distance : 15.395463299807405
+surf+brief(H2) probably good matches (<60px) : 3839, 82.152793% of matches, 79.515327% of keypoints
+-------------------------------------- surf+daisy(l1) --------------------------------------
+surf+daisy(l1) compute 1 exec time : 0.2521648406982422
+surf+daisy(l1) compute 2 exec time : 0.25784945487976074
+surf+daisy(l1) matching exec time : 3.2539103031158447
+surf+daisy(l1) matching expected time : 0.14063620567321777
+surf+daisy(l1) detect+desc time : 0.9593954086303711
+surf+daisy(l1) future time : 0.9734590291976929
+surf+daisy(l1) desc : 100.000000%, match : 100.000000%, final : 100.000000%
+surf+daisy(l1) avg match distance : 0.09752070538183812
+surf+daisy(l1) probably good matches (<60px) : 4481, 92.812759% of matches, 92.812759% of keypoints
+-------------------------------------- surf+daisy(l2) --------------------------------------
+surf+daisy(l2) compute 1 exec time : 0.2355637550354004
+surf+daisy(l2) compute 2 exec time : 0.24936652183532715
+surf+daisy(l2) matching exec time : 3.0877044200897217
+surf+daisy(l2) matching expected time : 0.14739298820495605
+surf+daisy(l2) detect+desc time : 0.9343068599700928
+surf+daisy(l2) future time : 0.9490461587905884
+surf+daisy(l2) desc : 100.000000%, match : 100.000000%, final : 100.000000%
+surf+daisy(l2) avg match distance : 0.009942619281038212
+surf+daisy(l2) probably good matches (<60px) : 4416, 91.466446% of matches, 91.466446% of keypoints
+-------------------------------------- surf+freak(H1) --------------------------------------
+surf+freak(H1) compute 1 exec time : 0.04223155975341797
+surf+freak(H1) compute 2 exec time : 0.04516315460205078
+surf+freak(H1) matching exec time : 0.2803056240081787
+surf+freak(H1) matching expected time : 0.02107834815979004
+surf+freak(H1) detect+desc time : 0.5367791652679443
+surf+freak(H1) future time : 0.5388870000839233
+surf+freak(H1) desc : 85.542668%, match : 100.000000%, final : 85.542668%
+surf+freak(H1) avg match distance : 29.693462469733657
+surf+freak(H1) probably good matches (<60px) : 3874, 93.801453% of matches, 80.240265% of keypoints
+-------------------------------------- surf+freak(H2) --------------------------------------
+surf+freak(H2) compute 1 exec time : 0.03679704666137695
+surf+freak(H2) compute 2 exec time : 0.04811882972717285
+surf+freak(H2) matching exec time : 0.6475520133972168
+surf+freak(H2) matching expected time : 0.0382997989654541
+surf+freak(H2) detect+desc time : 0.5343024730682373
+surf+freak(H2) future time : 0.5381324529647827
+surf+freak(H2) desc : 85.542668%, match : 100.000000%, final : 85.542668%
+surf+freak(H2) avg match distance : 28.190072639225182
+surf+freak(H2) probably good matches (<60px) : 3870, 93.704600% of matches, 80.157415% of keypoints
+-------------------------------------- surf+latch(H1) --------------------------------------
+surf+latch(H1) compute 1 exec time : 0.4179556369781494
+surf+latch(H1) compute 2 exec time : 0.4368729591369629
+surf+latch(H1) matching exec time : 0.199415922164917
+surf+latch(H1) matching expected time : 0.012743949890136719
+surf+latch(H1) detect+desc time : 1.3042011260986328
+surf+latch(H1) future time : 1.3054755210876465
+surf+latch(H1) desc : 97.058824%, match : 100.000000%, final : 97.058824%
+surf+latch(H1) avg match distance : 28.26696542893726
+surf+latch(H1) probably good matches (<60px) : 4216, 89.970124% of matches, 87.323944% of keypoints
+-------------------------------------- surf+latch(H2) --------------------------------------
+surf+latch(H2) compute 1 exec time : 0.4196474552154541
+surf+latch(H2) compute 2 exec time : 0.4373643398284912
+surf+latch(H2) matching exec time : 0.3031005859375
+surf+latch(H2) matching expected time : 0.021424055099487305
+surf+latch(H2) detect+desc time : 1.306389570236206
+surf+latch(H2) future time : 1.3085319757461549
+surf+latch(H2) desc : 97.058824%, match : 100.000000%, final : 97.058824%
+surf+latch(H2) avg match distance : 25.656209987195904
+surf+latch(H2) probably good matches (<60px) : 4177, 89.137857% of matches, 86.516156% of keypoints
+-------------------------------------- surf+lucid(H1) --------------------------------------
+surf+lucid(H1) compute 1 exec time : 0.010084152221679688
+surf+lucid(H1) compute 2 exec time : 0.008942127227783203
+surf+lucid(H1) matching exec time : 0.45145177841186523
+surf+lucid(H1) matching expected time : 0.021577835083007812
+surf+lucid(H1) detect+desc time : 0.46840929985046387
+surf+lucid(H1) future time : 0.4705670833587646
+surf+lucid(H1) desc : 100.000000%, match : 100.000000%, final : 100.000000%
+surf+lucid(H1) avg match distance : 27.30115990057995
+surf+lucid(H1) probably good matches (<60px) : 1997, 41.362883% of matches, 41.362883% of keypoints
+-------------------------------------- surf+lucid(H2) --------------------------------------
+surf+lucid(H2) compute 1 exec time : 0.007327079772949219
+surf+lucid(H2) compute 2 exec time : 0.010541677474975586
+surf+lucid(H2) matching exec time : 0.4819815158843994
+surf+lucid(H2) matching expected time : 0.019172191619873047
+surf+lucid(H2) detect+desc time : 0.467254638671875
+surf+lucid(H2) future time : 0.4691718578338623
+surf+lucid(H2) desc : 100.000000%, match : 100.000000%, final : 100.000000%
+surf+lucid(H2) avg match distance : 20.459610604805302
+surf+lucid(H2) probably good matches (<60px) : 2143, 44.386910% of matches, 44.386910% of keypoints
+##################################### Detector : agast #####################################
+agast detect 1 exec time : 0.021864652633666992
+agast detect 2 exec time : 0.01959228515625
+agast feature 1 count : 4342
+agast feature 2 count : 5004
+-------------------------------------- agast+sift(l1) --------------------------------------
+agast+sift(l1) compute 1 exec time : 0.2741992473602295
+agast+sift(l1) compute 2 exec time : 0.332916259765625
+agast+sift(l1) matching exec time : 1.5248658657073975
+agast+sift(l1) matching expected time : 0.09359478950500488
+agast+sift(l1) detect+desc time : 0.6486761569976807
+agast+sift(l1) future time : 0.6580356359481812
+agast+sift(l1) desc : 100.000000%, match : 100.000000%, final : 100.000000%
+agast+sift(l1) avg match distance : 618.1777982496545
+agast+sift(l1) probably good matches (<60px) : 4282, 98.618148% of matches, 98.618148% of keypoints
+-------------------------------------- agast+sift(l2) --------------------------------------
+agast+sift(l2) compute 1 exec time : 0.27576470375061035
+agast+sift(l2) compute 2 exec time : 0.32964086532592773
+agast+sift(l2) matching exec time : 1.595499038696289
+agast+sift(l2) matching expected time : 0.09371757507324219
+agast+sift(l2) detect+desc time : 0.6469674110412598
+agast+sift(l2) future time : 0.656339168548584
+agast+sift(l2) desc : 100.000000%, match : 100.000000%, final : 100.000000%
+agast+sift(l2) avg match distance : 91.53110145083883
+agast+sift(l2) probably good matches (<60px) : 4258, 98.065408% of matches, 98.065408% of keypoints
+-------------------------------------- agast+surf(l1) --------------------------------------
+agast+surf(l1) compute 1 exec time : 0.03131866455078125
+agast+surf(l1) compute 2 exec time : 0.03578329086303711
+agast+surf(l1) matching exec time : 0.7871432304382324
+agast+surf(l1) matching expected time : 0.03841137886047363
+agast+surf(l1) detect+desc time : 0.10873556137084961
+agast+surf(l1) future time : 0.11257669925689698
+agast+surf(l1) desc : 100.000000%, match : 100.000000%, final : 100.000000%
+agast+surf(l1) avg match distance : 0.8970211803971458
+agast+surf(l1) probably good matches (<60px) : 3162, 72.823584% of matches, 72.823584% of keypoints
+-------------------------------------- agast+surf(l2) --------------------------------------
+agast+surf(l2) compute 1 exec time : 0.027423620223999023
+agast+surf(l2) compute 2 exec time : 0.029610395431518555
+agast+surf(l2) matching exec time : 0.7808825969696045
+agast+surf(l2) matching expected time : 0.03659963607788086
+agast+surf(l2) detect+desc time : 0.09859442710876465
+agast+surf(l2) future time : 0.10225439071655273
+agast+surf(l2) desc : 100.000000%, match : 100.000000%, final : 100.000000%
+agast+surf(l2) avg match distance : 0.19796611112735493
+agast+surf(l2) probably good matches (<60px) : 2896, 66.697374% of matches, 66.697374% of keypoints
+-------------------------------------- agast+surfext(l1) --------------------------------------
+agast+surfext(l1) compute 1 exec time : 0.03190159797668457
+agast+surfext(l1) compute 2 exec time : 0.03955483436584473
+agast+surfext(l1) matching exec time : 1.586796760559082
+agast+surfext(l1) matching expected time : 0.07828664779663086
+agast+surfext(l1) detect+desc time : 0.11301898956298828
+agast+surfext(l1) future time : 0.12084765434265136
+agast+surfext(l1) desc : 100.000000%, match : 100.000000%, final : 100.000000%
+agast+surfext(l1) avg match distance : 1.573716640702347
+agast+surfext(l1) probably good matches (<60px) : 3165, 72.892676% of matches, 72.892676% of keypoints
+-------------------------------------- agast+surfext(l2) --------------------------------------
+agast+surfext(l2) compute 1 exec time : 0.029393434524536133
+agast+surfext(l2) compute 2 exec time : 0.03861260414123535
+agast+surfext(l2) matching exec time : 1.5605180263519287
+agast+surfext(l2) matching expected time : 0.08345532417297363
+agast+surfext(l2) detect+desc time : 0.10957932472229004
+agast+surfext(l2) future time : 0.1179248571395874
+agast+surfext(l2) desc : 100.000000%, match : 100.000000%, final : 100.000000%
+agast+surfext(l2) avg match distance : 0.2765278325513527
+agast+surfext(l2) probably good matches (<60px) : 2867, 66.029480% of matches, 66.029480% of keypoints
+-------------------------------------- agast+brisk(H1) --------------------------------------
+agast+brisk(H1) compute 1 exec time : 0.07072615623474121
+agast+brisk(H1) compute 2 exec time : 0.09195899963378906
+agast+brisk(H1) matching exec time : 0.270113468170166
+agast+brisk(H1) matching expected time : 0.018314599990844727
+agast+brisk(H1) detect+desc time : 0.20424795150756836
+agast+brisk(H1) future time : 0.20607941150665282
+agast+brisk(H1) desc : 97.121142%, match : 100.000000%, final : 97.121142%
+agast+brisk(H1) avg match distance : 57.47355940241878
+agast+brisk(H1) probably good matches (<60px) : 2868, 68.010434% of matches, 66.052510% of keypoints
+-------------------------------------- agast+brisk(H2) --------------------------------------
+agast+brisk(H2) compute 1 exec time : 0.06649470329284668
+agast+brisk(H2) compute 2 exec time : 0.07800149917602539
+agast+brisk(H2) matching exec time : 0.6180844306945801
+agast+brisk(H2) matching expected time : 0.03488755226135254
+agast+brisk(H2) detect+desc time : 0.18606162071228027
+agast+brisk(H2) future time : 0.18955037593841553
+agast+brisk(H2) desc : 97.121142%, match : 100.000000%, final : 97.121142%
+agast+brisk(H2) avg match distance : 49.48683898506047
+agast+brisk(H2) probably good matches (<60px) : 2818, 66.824757% of matches, 64.900967% of keypoints
+-------------------------------------- agast+orb(H1) --------------------------------------
+agast+orb(H1) compute 1 exec time : 0.027747392654418945
+agast+orb(H1) compute 2 exec time : 0.03539323806762695
+agast+orb(H1) matching exec time : 0.26349496841430664
+agast+orb(H1) matching expected time : 0.017393112182617188
+agast+orb(H1) detect+desc time : 0.10471296310424805
+agast+orb(H1) future time : 0.10645227432250977
+agast+orb(H1) desc : 92.353754%, match : 100.000000%, final : 92.353754%
+agast+orb(H1) avg match distance : 20.411221945137157
+agast+orb(H1) probably good matches (<60px) : 3503, 87.356608% of matches, 80.677107% of keypoints
+-------------------------------------- agast+orb2(H1) --------------------------------------
+agast+orb2(H1) compute 1 exec time : 0.026613950729370117
+agast+orb2(H1) compute 2 exec time : 0.03853964805603027
+agast+orb2(H1) matching exec time : 0.2786383628845215
+agast+orb2(H1) matching expected time : 0.01690053939819336
+agast+orb2(H1) detect+desc time : 0.10671591758728027
+agast+orb2(H1) future time : 0.1084059715270996
+agast+orb2(H1) desc : 92.353754%, match : 100.000000%, final : 92.353754%
+agast+orb2(H1) avg match distance : 20.411221945137157
+agast+orb2(H1) probably good matches (<60px) : 3503, 87.356608% of matches, 80.677107% of keypoints
+-------------------------------------- agast+orb(H2) --------------------------------------
+agast+orb(H2) compute 1 exec time : 0.028555631637573242
+agast+orb(H2) compute 2 exec time : 0.04176640510559082
+agast+orb(H2) matching exec time : 0.37932753562927246
+agast+orb(H2) matching expected time : 0.019802093505859375
+agast+orb(H2) detect+desc time : 0.11188387870788574
+agast+orb(H2) future time : 0.11386408805847167
+agast+orb(H2) desc : 92.353754%, match : 100.000000%, final : 92.353754%
+agast+orb(H2) avg match distance : 19.10349127182045
+agast+orb(H2) probably good matches (<60px) : 3499, 87.256858% of matches, 80.584984% of keypoints
+-------------------------------------- agast+boost(l1) --------------------------------------
+agast+boost(l1) compute 1 exec time : 0.7701416015625
+agast+boost(l1) compute 2 exec time : 1.0945110321044922
+agast+boost(l1) matching exec time : 0.5509369373321533
+agast+boost(l1) matching expected time : 0.03462481498718262
+agast+boost(l1) detect+desc time : 1.9062187671661377
+agast+boost(l1) future time : 1.909681248664856
+agast+boost(l1) desc : 100.000000%, match : 100.000000%, final : 100.000000%
+agast+boost(l1) avg match distance : 649.3542146476278
+agast+boost(l1) probably good matches (<60px) : 3522, 81.114694% of matches, 81.114694% of keypoints
+-------------------------------------- agast+boost(l2) --------------------------------------
+agast+boost(l2) compute 1 exec time : 0.9639461040496826
+agast+boost(l2) compute 2 exec time : 0.8144474029541016
+agast+boost(l2) matching exec time : 0.43935728073120117
+agast+boost(l2) matching expected time : 0.024298429489135742
+agast+boost(l2) detect+desc time : 1.8199577331542969
+agast+boost(l2) future time : 1.8223875761032104
+agast+boost(l2) desc : 100.000000%, match : 100.000000%, final : 100.000000%
+agast+boost(l2) avg match distance : 219.43130296147513
+agast+boost(l2) probably good matches (<60px) : 3097, 71.326578% of matches, 71.326578% of keypoints
+-------------------------------------- agast+brief(H1) --------------------------------------
+agast+brief(H1) compute 1 exec time : 0.04028940200805664
+agast+brief(H1) compute 2 exec time : 0.04015183448791504
+agast+brief(H1) matching exec time : 0.2775077819824219
+agast+brief(H1) matching expected time : 0.01661849021911621
+agast+brief(H1) detect+desc time : 0.12200689315795898
+agast+brief(H1) future time : 0.1236687421798706
+agast+brief(H1) desc : 93.067711%, match : 100.000000%, final : 93.067711%
+agast+brief(H1) avg match distance : 15.132392972036625
+agast+brief(H1) probably good matches (<60px) : 3730, 92.303885% of matches, 85.905113% of keypoints
+-------------------------------------- agast+brief(H2) --------------------------------------
+agast+brief(H2) compute 1 exec time : 0.025862455368041992
+agast+brief(H2) compute 2 exec time : 0.03919267654418945
+agast+brief(H2) matching exec time : 0.36237120628356934
+agast+brief(H2) matching expected time : 0.020867347717285156
+agast+brief(H2) detect+desc time : 0.10661911964416504
+agast+brief(H2) future time : 0.10870585441589356
+agast+brief(H2) desc : 93.067711%, match : 100.000000%, final : 93.067711%
+agast+brief(H2) avg match distance : 14.337045285820341
+agast+brief(H2) probably good matches (<60px) : 3711, 91.833705% of matches, 85.467526% of keypoints
+-------------------------------------- agast+daisy(l1) --------------------------------------
+agast+daisy(l1) compute 1 exec time : 0.2197573184967041
+agast+daisy(l1) compute 2 exec time : 0.2277069091796875
+agast+daisy(l1) matching exec time : 2.518333911895752
+agast+daisy(l1) matching expected time : 0.13687515258789062
+agast+daisy(l1) detect+desc time : 0.4890251159667969
+agast+daisy(l1) future time : 0.502712631225586
+agast+daisy(l1) desc : 100.000000%, match : 100.000000%, final : 100.000000%
+agast+daisy(l1) avg match distance : 0.1448739041622131
+agast+daisy(l1) probably good matches (<60px) : 4192, 96.545371% of matches, 96.545371% of keypoints
+-------------------------------------- agast+daisy(l2) --------------------------------------
+agast+daisy(l2) compute 1 exec time : 0.22407317161560059
+agast+daisy(l2) compute 2 exec time : 0.23335051536560059
+agast+daisy(l2) matching exec time : 2.5649685859680176
+agast+daisy(l2) matching expected time : 0.143326997756958
+agast+daisy(l2) detect+desc time : 0.4989817142486572
+agast+daisy(l2) future time : 0.5133144140243531
+agast+daisy(l2) desc : 100.000000%, match : 100.000000%, final : 100.000000%
+agast+daisy(l2) avg match distance : 0.01520628326775226
+agast+daisy(l2) probably good matches (<60px) : 4147, 95.508982% of matches, 95.508982% of keypoints
+-------------------------------------- agast+freak(H1) --------------------------------------
+agast+freak(H1) compute 1 exec time : 0.03205585479736328
+agast+freak(H1) compute 2 exec time : 0.04603886604309082
+agast+freak(H1) matching exec time : 0.2633554935455322
+agast+freak(H1) matching expected time : 0.01853036880493164
+agast+freak(H1) detect+desc time : 0.11966609954833984
+agast+freak(H1) future time : 0.12151913642883301
+agast+freak(H1) desc : 84.016582%, match : 100.000000%, final : 84.016582%
+agast+freak(H1) avg match distance : 25.966008771929825
+agast+freak(H1) probably good matches (<60px) : 3573, 97.944079% of matches, 82.289268% of keypoints
+-------------------------------------- agast+freak(H2) --------------------------------------
+agast+freak(H2) compute 1 exec time : 0.04173469543457031
+agast+freak(H2) compute 2 exec time : 0.06411218643188477
+agast+freak(H2) matching exec time : 0.6493148803710938
+agast+freak(H2) matching expected time : 0.048192739486694336
+agast+freak(H2) detect+desc time : 0.14742469787597656
+agast+freak(H2) future time : 0.152243971824646
+agast+freak(H2) desc : 84.016582%, match : 100.000000%, final : 84.016582%
+agast+freak(H2) avg match distance : 24.77823464912281
+agast+freak(H2) probably good matches (<60px) : 3574, 97.971491% of matches, 82.312298% of keypoints
+-------------------------------------- agast+latch(H1) --------------------------------------
+agast+latch(H1) compute 1 exec time : 0.36103010177612305
+agast+latch(H1) compute 2 exec time : 0.4193727970123291
+agast+latch(H1) matching exec time : 0.17120838165283203
+agast+latch(H1) matching expected time : 0.012764453887939453
+agast+latch(H1) detect+desc time : 0.8219637870788574
+agast+latch(H1) future time : 0.8232402324676513
+agast+latch(H1) desc : 93.390143%, match : 100.000000%, final : 93.390143%
+agast+latch(H1) avg match distance : 24.708014796547474
+agast+latch(H1) probably good matches (<60px) : 3917, 96.596794% of matches, 90.211884% of keypoints
+-------------------------------------- agast+latch(H2) --------------------------------------
+agast+latch(H2) compute 1 exec time : 0.36214733123779297
+agast+latch(H2) compute 2 exec time : 0.41993165016174316
+agast+latch(H2) matching exec time : 0.23753595352172852
+agast+latch(H2) matching expected time : 0.016809701919555664
+agast+latch(H2) detect+desc time : 0.8236329555511475
+agast+latch(H2) future time : 0.825313925743103
+agast+latch(H2) desc : 93.390143%, match : 100.000000%, final : 93.390143%
+agast+latch(H2) avg match distance : 22.774599260172625
+agast+latch(H2) probably good matches (<60px) : 3901, 96.202219% of matches, 89.843390% of keypoints
+-------------------------------------- agast+lucid(H1) --------------------------------------
+agast+lucid(H1) compute 1 exec time : 0.008686542510986328
+agast+lucid(H1) compute 2 exec time : 0.011443853378295898
+agast+lucid(H1) matching exec time : 0.3720676898956299
+agast+lucid(H1) matching expected time : 0.01837611198425293
+agast+lucid(H1) detect+desc time : 0.06177711486816406
+agast+lucid(H1) future time : 0.06361472606658936
+agast+lucid(H1) desc : 100.000000%, match : 100.000000%, final : 100.000000%
+agast+lucid(H1) avg match distance : 35.333486872409026
+agast+lucid(H1) probably good matches (<60px) : 1633, 37.609397% of matches, 37.609397% of keypoints
+-------------------------------------- agast+lucid(H2) --------------------------------------
+agast+lucid(H2) compute 1 exec time : 0.007781267166137695
+agast+lucid(H2) compute 2 exec time : 0.010053157806396484
+agast+lucid(H2) matching exec time : 0.39574551582336426
+agast+lucid(H2) matching expected time : 0.019574880599975586
+agast+lucid(H2) detect+desc time : 0.05948376655578613
+agast+lucid(H2) future time : 0.06144125461578369
+agast+lucid(H2) desc : 100.000000%, match : 100.000000%, final : 100.000000%
+agast+lucid(H2) avg match distance : 26.377245508982035
+agast+lucid(H2) probably good matches (<60px) : 1837, 42.307692% of matches, 42.307692% of keypoints
+##################################### Detector : brisk #####################################
+brisk detect 1 exec time : 0.11735057830810547
+brisk detect 2 exec time : 0.10977554321289062
+brisk feature 1 count : 4606
+brisk feature 2 count : 4942
+-------------------------------------- brisk+sift(l1) --------------------------------------
+#-#-# Error with brisk+sift(l1)
+-------------------------------------- brisk+sift(l2) --------------------------------------
+#-#-# Error with brisk+sift(l2)
+-------------------------------------- brisk+surf(l1) --------------------------------------
+brisk+surf(l1) compute 1 exec time : 0.39072632789611816
+brisk+surf(l1) compute 2 exec time : 0.3738129138946533
+brisk+surf(l1) matching exec time : 0.7361078262329102
+brisk+surf(l1) matching expected time : 0.03923368453979492
+brisk+surf(l1) detect+desc time : 0.9917535781860352
+brisk+surf(l1) future time : 0.9956769466400146
+brisk+surf(l1) desc : 100.000000%, match : 100.000000%, final : 100.000000%
+brisk+surf(l1) avg match distance : 0.8097047614167423
+brisk+surf(l1) probably good matches (<60px) : 4222, 91.663048% of matches, 91.663048% of keypoints
+-------------------------------------- brisk+surf(l2) --------------------------------------
+brisk+surf(l2) compute 1 exec time : 0.7076737880706787
+brisk+surf(l2) compute 2 exec time : 1.050199031829834
+brisk+surf(l2) matching exec time : 1.3440911769866943
+brisk+surf(l2) matching expected time : 0.07126283645629883
+brisk+surf(l2) detect+desc time : 1.98508620262146
+brisk+surf(l2) future time : 1.9922124862670898
+brisk+surf(l2) desc : 100.000000%, match : 100.000000%, final : 100.000000%
+brisk+surf(l2) avg match distance : 0.18097738184146436
+brisk+surf(l2) probably good matches (<60px) : 4083, 88.645245% of matches, 88.645245% of keypoints
+-------------------------------------- brisk+surfext(l1) --------------------------------------
+brisk+surfext(l1) compute 1 exec time : 0.8800404071807861
+brisk+surfext(l1) compute 2 exec time : 0.8688807487487793
+brisk+surfext(l1) matching exec time : 3.122720241546631
+brisk+surfext(l1) matching expected time : 0.19747233390808105
+brisk+surfext(l1) detect+desc time : 1.9761371612548828
+brisk+surfext(l1) future time : 1.995884394645691
+brisk+surfext(l1) desc : 100.000000%, match : 100.000000%, final : 100.000000%
+brisk+surfext(l1) avg match distance : 1.5620849087067625
+brisk+surfext(l1) probably good matches (<60px) : 4305, 93.465046% of matches, 93.465046% of keypoints
+-------------------------------------- brisk+surfext(l2) --------------------------------------
+brisk+surfext(l2) compute 1 exec time : 1.925145149230957
+brisk+surfext(l2) compute 2 exec time : 1.5400409698486328
+brisk+surfext(l2) matching exec time : 4.220390558242798
+brisk+surfext(l2) matching expected time : 0.3054993152618408
+brisk+surfext(l2) detect+desc time : 3.6924352645874023
+brisk+surfext(l2) future time : 3.7229851961135862
+brisk+surfext(l2) desc : 100.000000%, match : 100.000000%, final : 100.000000%
+brisk+surfext(l2) avg match distance : 0.27182792305147263
+brisk+surfext(l2) probably good matches (<60px) : 4174, 90.620929% of matches, 90.620929% of keypoints
+-------------------------------------- brisk+brisk(H1) --------------------------------------
+brisk+brisk(H1) compute 1 exec time : 0.14441680908203125
+brisk+brisk(H1) compute 2 exec time : 0.2053546905517578
+brisk+brisk(H1) matching exec time : 0.7750377655029297
+brisk+brisk(H1) matching expected time : 0.07840299606323242
+brisk+brisk(H1) detect+desc time : 0.5771336555480957
+brisk+brisk(H1) future time : 0.584973955154419
+brisk+brisk(H1) desc : 100.000000%, match : 100.000000%, final : 100.000000%
+brisk+brisk(H1) avg match distance : 60.73729917498915
+brisk+brisk(H1) probably good matches (<60px) : 3705, 80.438558% of matches, 80.438558% of keypoints
+-------------------------------------- brisk+brisk(H2) --------------------------------------
+brisk+brisk(H2) compute 1 exec time : 0.12483978271484375
+brisk+brisk(H2) compute 2 exec time : 0.15790748596191406
+brisk+brisk(H2) matching exec time : 1.462531328201294
+brisk+brisk(H2) matching expected time : 0.08954071998596191
+brisk+brisk(H2) detect+desc time : 0.5100464820861816
+brisk+brisk(H2) future time : 0.5190005540847779
+brisk+brisk(H2) desc : 100.000000%, match : 100.000000%, final : 100.000000%
+brisk+brisk(H2) avg match distance : 52.24641771602258
+brisk+brisk(H2) probably good matches (<60px) : 3697, 80.264872% of matches, 80.264872% of keypoints
+-------------------------------------- brisk+orb(H1) --------------------------------------
+brisk+orb(H1) compute 1 exec time : 0.14501214027404785
+brisk+orb(H1) compute 2 exec time : 0.11027932167053223
+brisk+orb(H1) matching exec time : 0.5044593811035156
+brisk+orb(H1) matching expected time : 0.024878978729248047
+brisk+orb(H1) detect+desc time : 0.4826991558074951
+brisk+orb(H1) future time : 0.4851870536804199
+brisk+orb(H1) desc : 98.762484%, match : 100.000000%, final : 98.762484%
+brisk+orb(H1) avg match distance : 32.61244229500989
+brisk+orb(H1) probably good matches (<60px) : 3382, 74.346010% of matches, 73.425966% of keypoints
+-------------------------------------- brisk+orb2(H1) --------------------------------------
+brisk+orb2(H1) compute 1 exec time : 0.03667759895324707
+brisk+orb2(H1) compute 2 exec time : 0.04328608512878418
+brisk+orb2(H1) matching exec time : 0.29738950729370117
+brisk+orb2(H1) matching expected time : 0.01667499542236328
+brisk+orb2(H1) detect+desc time : 0.30716419219970703
+brisk+orb2(H1) future time : 0.30883169174194336
+brisk+orb2(H1) desc : 98.762484%, match : 100.000000%, final : 98.762484%
+brisk+orb2(H1) avg match distance : 32.61244229500989
+brisk+orb2(H1) probably good matches (<60px) : 3382, 74.346010% of matches, 73.425966% of keypoints
+-------------------------------------- brisk+orb(H2) --------------------------------------
+brisk+orb(H2) compute 1 exec time : 0.11921572685241699
+brisk+orb(H2) compute 2 exec time : 0.16931724548339844
+brisk+orb(H2) matching exec time : 0.5321531295776367
+brisk+orb(H2) matching expected time : 0.01926565170288086
+brisk+orb(H2) detect+desc time : 0.5158107280731201
+brisk+orb(H2) future time : 0.5177372932434082
+brisk+orb(H2) desc : 98.762484%, match : 100.000000%, final : 98.762484%
+brisk+orb(H2) avg match distance : 29.897340074741702
+brisk+orb(H2) probably good matches (<60px) : 3377, 74.236096% of matches, 73.317412% of keypoints
+-------------------------------------- brisk+boost(l1) --------------------------------------
+brisk+boost(l1) compute 1 exec time : 0.7668631076812744
+brisk+boost(l1) compute 2 exec time : 0.9013161659240723
+brisk+boost(l1) matching exec time : 0.48805737495422363
+brisk+boost(l1) matching expected time : 0.025602340698242188
+brisk+boost(l1) detect+desc time : 1.8953888416290283
+brisk+boost(l1) future time : 1.8979490756988526
+brisk+boost(l1) desc : 100.000000%, match : 100.000000%, final : 100.000000%
+brisk+boost(l1) avg match distance : 596.0086843247938
+brisk+boost(l1) probably good matches (<60px) : 3926, 85.236648% of matches, 85.236648% of keypoints
+-------------------------------------- brisk+boost(l2) --------------------------------------
+brisk+boost(l2) compute 1 exec time : 0.8124656677246094
+brisk+boost(l2) compute 2 exec time : 0.8851563930511475
+brisk+boost(l2) matching exec time : 0.48762035369873047
+brisk+boost(l2) matching expected time : 0.031746864318847656
+brisk+boost(l2) detect+desc time : 1.9248361587524414
+brisk+boost(l2) future time : 1.928010845184326
+brisk+boost(l2) desc : 100.000000%, match : 100.000000%, final : 100.000000%
+brisk+boost(l2) avg match distance : 207.38968005643116
+brisk+boost(l2) probably good matches (<60px) : 3562, 77.333912% of matches, 77.333912% of keypoints
+-------------------------------------- brisk+brief(H1) --------------------------------------
+brisk+brief(H1) compute 1 exec time : 0.03471231460571289
+brisk+brief(H1) compute 2 exec time : 0.05805802345275879
+brisk+brief(H1) matching exec time : 0.37417030334472656
+brisk+brief(H1) matching expected time : 0.015916109085083008
+brisk+brief(H1) detect+desc time : 0.3199899196624756
+brisk+brief(H1) future time : 0.3215815305709839
+brisk+brief(H1) desc : 99.153278%, match : 100.000000%, final : 99.153278%
+brisk+brief(H1) avg match distance : 15.244580687541056
+brisk+brief(H1) probably good matches (<60px) : 4224, 92.489599% of matches, 91.706470% of keypoints
+-------------------------------------- brisk+brief(H2) --------------------------------------
+brisk+brief(H2) compute 1 exec time : 0.032119035720825195
+brisk+brief(H2) compute 2 exec time : 0.03265810012817383
+brisk+brief(H2) matching exec time : 0.4802520275115967
+brisk+brief(H2) matching expected time : 0.021254539489746094
+brisk+brief(H2) detect+desc time : 0.2919931411743164
+brisk+brief(H2) future time : 0.294118595123291
+brisk+brief(H2) desc : 99.153278%, match : 100.000000%, final : 99.153278%
+brisk+brief(H2) avg match distance : 14.474052988832932
+brisk+brief(H2) probably good matches (<60px) : 4203, 92.029779% of matches, 91.250543% of keypoints
+-------------------------------------- brisk+daisy(l1) --------------------------------------
+brisk+daisy(l1) compute 1 exec time : 0.24605679512023926
+brisk+daisy(l1) compute 2 exec time : 0.3689851760864258
+brisk+daisy(l1) matching exec time : 2.5427322387695312
+brisk+daisy(l1) matching expected time : 0.12119603157043457
+brisk+daisy(l1) detect+desc time : 0.8423256874084473
+brisk+daisy(l1) future time : 0.8544452905654907
+brisk+daisy(l1) desc : 100.000000%, match : 100.000000%, final : 100.000000%
+brisk+daisy(l1) avg match distance : 0.1430789711104671
+brisk+daisy(l1) probably good matches (<60px) : 4467, 96.982197% of matches, 96.982197% of keypoints
+-------------------------------------- brisk+daisy(l2) --------------------------------------
+brisk+daisy(l2) compute 1 exec time : 0.22757959365844727
+brisk+daisy(l2) compute 2 exec time : 0.2502624988555908
+brisk+daisy(l2) matching exec time : 2.5174310207366943
+brisk+daisy(l2) matching expected time : 0.11987900733947754
+brisk+daisy(l2) detect+desc time : 0.7050514221191406
+brisk+daisy(l2) future time : 0.7170393228530884
+brisk+daisy(l2) desc : 100.000000%, match : 100.000000%, final : 100.000000%
+brisk+daisy(l2) avg match distance : 0.01491483432528461
+brisk+daisy(l2) probably good matches (<60px) : 4427, 96.113765% of matches, 96.113765% of keypoints
+-------------------------------------- brisk+freak(H1) --------------------------------------
+brisk+freak(H1) compute 1 exec time : 0.03704023361206055
+brisk+freak(H1) compute 2 exec time : 0.046475887298583984
+brisk+freak(H1) matching exec time : 0.36014556884765625
+brisk+freak(H1) matching expected time : 0.018751144409179688
+brisk+freak(H1) detect+desc time : 0.31072402000427246
+brisk+freak(H1) future time : 0.31259913444519044
+brisk+freak(H1) desc : 92.922275%, match : 100.000000%, final : 92.922275%
+brisk+freak(H1) avg match distance : 26.19158878504673
+brisk+freak(H1) probably good matches (<60px) : 4192, 97.943925% of matches, 91.011724% of keypoints
+-------------------------------------- brisk+freak(H2) --------------------------------------
+brisk+freak(H2) compute 1 exec time : 0.030724048614501953
+brisk+freak(H2) compute 2 exec time : 0.04145407676696777
+brisk+freak(H2) matching exec time : 0.7325229644775391
+brisk+freak(H2) matching expected time : 0.03518939018249512
+brisk+freak(H2) detect+desc time : 0.299393892288208
+brisk+freak(H2) future time : 0.3029128313064575
+brisk+freak(H2) desc : 92.922275%, match : 100.000000%, final : 92.922275%
+brisk+freak(H2) avg match distance : 25.06892523364486
+brisk+freak(H2) probably good matches (<60px) : 4189, 97.873832% of matches, 90.946591% of keypoints
+-------------------------------------- brisk+latch(H1) --------------------------------------
+brisk+latch(H1) compute 1 exec time : 0.40784358978271484
+brisk+latch(H1) compute 2 exec time : 0.44066429138183594
+brisk+latch(H1) matching exec time : 0.19933629035949707
+brisk+latch(H1) matching expected time : 0.012448787689208984
+brisk+latch(H1) detect+desc time : 1.0757172107696533
+brisk+latch(H1) future time : 1.0769620895385743
+brisk+latch(H1) desc : 99.305254%, match : 100.000000%, final : 99.305254%
+brisk+latch(H1) avg match distance : 24.554000874508088
+brisk+latch(H1) probably good matches (<60px) : 4405, 96.305203% of matches, 95.636127% of keypoints
+-------------------------------------- brisk+latch(H2) --------------------------------------
+brisk+latch(H2) compute 1 exec time : 0.41036200523376465
+brisk+latch(H2) compute 2 exec time : 0.6455202102661133
+brisk+latch(H2) matching exec time : 0.4095735549926758
+brisk+latch(H2) matching expected time : 0.02990412712097168
+brisk+latch(H2) detect+desc time : 1.2830870151519775
+brisk+latch(H2) future time : 1.2860774278640748
+brisk+latch(H2) desc : 99.305254%, match : 100.000000%, final : 99.305254%
+brisk+latch(H2) avg match distance : 22.65609969392217
+brisk+latch(H2) probably good matches (<60px) : 4388, 95.933537% of matches, 95.267043% of keypoints
+-------------------------------------- brisk+lucid(H1) --------------------------------------
+brisk+lucid(H1) compute 1 exec time : 0.007050991058349609
+brisk+lucid(H1) compute 2 exec time : 0.005954265594482422
+brisk+lucid(H1) matching exec time : 0.3038632869720459
+brisk+lucid(H1) matching expected time : 0.03180980682373047
+brisk+lucid(H1) detect+desc time : 0.24030113220214844
+brisk+lucid(H1) future time : 0.24348211288452148
+brisk+lucid(H1) desc : 100.000000%, match : 100.000000%, final : 100.000000%
+brisk+lucid(H1) avg match distance : 37.22948328267477
+brisk+lucid(H1) probably good matches (<60px) : 1736, 37.689970% of matches, 37.689970% of keypoints
+-------------------------------------- brisk+lucid(H2) --------------------------------------
+brisk+lucid(H2) compute 1 exec time : 0.006233692169189453
+brisk+lucid(H2) compute 2 exec time : 0.005960226058959961
+brisk+lucid(H2) matching exec time : 0.4414985179901123
+brisk+lucid(H2) matching expected time : 0.01996588706970215
+brisk+lucid(H2) detect+desc time : 0.239426851272583
+brisk+lucid(H2) future time : 0.24142343997955323
+brisk+lucid(H2) desc : 100.000000%, match : 100.000000%, final : 100.000000%
+brisk+lucid(H2) avg match distance : 27.82240555796787
+brisk+lucid(H2) probably good matches (<60px) : 1937, 42.053843% of matches, 42.053843% of keypoints
+##################################### Detector : fast #####################################
+fast detect 1 exec time : 0.005121707916259766
+fast detect 2 exec time : 0.004528045654296875
+fast feature 1 count : 3835
+fast feature 2 count : 4418
+-------------------------------------- fast+sift(l1) --------------------------------------
+fast+sift(l1) compute 1 exec time : 0.24310827255249023
+fast+sift(l1) compute 2 exec time : 0.3024585247039795
+fast+sift(l1) matching exec time : 1.1685011386871338
+fast+sift(l1) matching expected time : 0.09071850776672363
+fast+sift(l1) detect+desc time : 0.5553324222564697
+fast+sift(l1) future time : 0.5644042730331421
+fast+sift(l1) desc : 100.000000%, match : 100.000000%, final : 100.000000%
+fast+sift(l1) avg match distance : 700.9050847457627
+fast+sift(l1) probably good matches (<60px) : 3719, 96.975228% of matches, 96.975228% of keypoints
+-------------------------------------- fast+sift(l2) --------------------------------------
+fast+sift(l2) compute 1 exec time : 0.2512929439544678
+fast+sift(l2) compute 2 exec time : 0.3182809352874756
+fast+sift(l2) matching exec time : 1.1962995529174805
+fast+sift(l2) matching expected time : 0.09377622604370117
+fast+sift(l2) detect+desc time : 0.5793447494506836
+fast+sift(l2) future time : 0.5887223720550537
+fast+sift(l2) desc : 100.000000%, match : 100.000000%, final : 100.000000%
+fast+sift(l2) avg match distance : 102.8771467545819
+fast+sift(l2) probably good matches (<60px) : 3698, 96.427640% of matches, 96.427640% of keypoints
+-------------------------------------- fast+surf(l1) --------------------------------------
+fast+surf(l1) compute 1 exec time : 0.014994382858276367
+fast+surf(l1) compute 2 exec time : 0.023558378219604492
+fast+surf(l1) matching exec time : 0.755556583404541
+fast+surf(l1) matching expected time : 0.03874492645263672
+fast+surf(l1) detect+desc time : 0.04830813407897949
+fast+surf(l1) future time : 0.05218262672424316
+fast+surf(l1) desc : 100.000000%, match : 100.000000%, final : 100.000000%
+fast+surf(l1) avg match distance : 0.9242636385153994
+fast+surf(l1) probably good matches (<60px) : 2606, 67.953064% of matches, 67.953064% of keypoints
+-------------------------------------- fast+surf(l2) --------------------------------------
+fast+surf(l2) compute 1 exec time : 0.014726400375366211
+fast+surf(l2) compute 2 exec time : 0.018094301223754883
+fast+surf(l2) matching exec time : 0.6269433498382568
+fast+surf(l2) matching expected time : 0.03834652900695801
+fast+surf(l2) detect+desc time : 0.04259228706359863
+fast+surf(l2) future time : 0.046426939964294436
+fast+surf(l2) desc : 100.000000%, match : 100.000000%, final : 100.000000%
+fast+surf(l2) avg match distance : 0.20313241892595044
+fast+surf(l2) probably good matches (<60px) : 2419, 63.076923% of matches, 63.076923% of keypoints
+-------------------------------------- fast+surfext(l1) --------------------------------------
+fast+surfext(l1) compute 1 exec time : 0.017859220504760742
+fast+surfext(l1) compute 2 exec time : 0.02780604362487793
+fast+surfext(l1) matching exec time : 2.0107643604278564
+fast+surfext(l1) matching expected time : 0.1714324951171875
+fast+surfext(l1) detect+desc time : 0.05542302131652832
+fast+surfext(l1) future time : 0.07256627082824707
+fast+surfext(l1) desc : 100.000000%, match : 100.000000%, final : 100.000000%
+fast+surfext(l1) avg match distance : 1.6083039530991265
+fast+surfext(l1) probably good matches (<60px) : 2603, 67.874837% of matches, 67.874837% of keypoints
+-------------------------------------- fast+surfext(l2) --------------------------------------
+fast+surfext(l2) compute 1 exec time : 0.017973899841308594
+fast+surfext(l2) compute 2 exec time : 0.022510528564453125
+fast+surfext(l2) matching exec time : 1.3659999370574951
+fast+surfext(l2) matching expected time : 0.09628629684448242
+fast+surfext(l2) detect+desc time : 0.05024313926696777
+fast+surfext(l2) future time : 0.059871768951416014
+fast+surfext(l2) desc : 100.000000%, match : 100.000000%, final : 100.000000%
+fast+surfext(l2) avg match distance : 0.2810655393264945
+fast+surfext(l2) probably good matches (<60px) : 2392, 62.372881% of matches, 62.372881% of keypoints
+-------------------------------------- fast+brisk(H1) --------------------------------------
+fast+brisk(H1) compute 1 exec time : 0.05538225173950195
+fast+brisk(H1) compute 2 exec time : 0.07743525505065918
+fast+brisk(H1) matching exec time : 0.312788724899292
+fast+brisk(H1) matching expected time : 0.022467613220214844
+fast+brisk(H1) detect+desc time : 0.14258575439453125
+fast+brisk(H1) future time : 0.14483251571655273
+fast+brisk(H1) desc : 96.975228%, match : 100.000000%, final : 96.975228%
+fast+brisk(H1) avg match distance : 59.376714170475935
+fast+brisk(H1) probably good matches (<60px) : 2295, 61.710137% of matches, 59.843546% of keypoints
+-------------------------------------- fast+brisk(H2) --------------------------------------
+fast+brisk(H2) compute 1 exec time : 0.039995670318603516
+fast+brisk(H2) compute 2 exec time : 0.05866432189941406
+fast+brisk(H2) matching exec time : 0.7123503684997559
+fast+brisk(H2) matching expected time : 0.04071331024169922
+fast+brisk(H2) detect+desc time : 0.10843300819396973
+fast+brisk(H2) future time : 0.11250433921813965
+fast+brisk(H2) desc : 96.975228%, match : 100.000000%, final : 96.975228%
+fast+brisk(H2) avg match distance : 50.83570852379672
+fast+brisk(H2) probably good matches (<60px) : 2265, 60.903469% of matches, 59.061278% of keypoints
+-------------------------------------- fast+orb(H1) --------------------------------------
+fast+orb(H1) compute 1 exec time : 0.02051854133605957
+fast+orb(H1) compute 2 exec time : 0.027797460556030273
+fast+orb(H1) matching exec time : 0.29526352882385254
+fast+orb(H1) matching expected time : 0.018417835235595703
+fast+orb(H1) detect+desc time : 0.058132171630859375
+fast+orb(H1) future time : 0.059973955154418945
+fast+orb(H1) desc : 91.994785%, match : 100.000000%, final : 91.994785%
+fast+orb(H1) avg match distance : 22.354308390022677
+fast+orb(H1) probably good matches (<60px) : 2897, 82.114512% of matches, 75.541069% of keypoints
+-------------------------------------- fast+orb2(H1) --------------------------------------
+fast+orb2(H1) compute 1 exec time : 0.024770021438598633
+fast+orb2(H1) compute 2 exec time : 0.04108238220214844
+fast+orb2(H1) matching exec time : 0.3770463466644287
+fast+orb2(H1) matching expected time : 0.01725912094116211
+fast+orb2(H1) detect+desc time : 0.07561302185058594
+fast+orb2(H1) future time : 0.07733893394470215
+fast+orb2(H1) desc : 91.994785%, match : 100.000000%, final : 91.994785%
+fast+orb2(H1) avg match distance : 22.354308390022677
+fast+orb2(H1) probably good matches (<60px) : 2897, 82.114512% of matches, 75.541069% of keypoints
+-------------------------------------- fast+orb(H2) --------------------------------------
+fast+orb(H2) compute 1 exec time : 0.01985335350036621
+fast+orb(H2) compute 2 exec time : 0.029939889907836914
+fast+orb(H2) matching exec time : 0.4080057144165039
+fast+orb(H2) matching expected time : 0.022934436798095703
+fast+orb(H2) detect+desc time : 0.05956268310546875
+fast+orb(H2) future time : 0.06185612678527832
+fast+orb(H2) desc : 91.994785%, match : 100.000000%, final : 91.994785%
+fast+orb(H2) avg match distance : 20.73639455782313
+fast+orb(H2) probably good matches (<60px) : 2896, 82.086168% of matches, 75.514993% of keypoints
+-------------------------------------- fast+boost(l1) --------------------------------------
+fast+boost(l1) compute 1 exec time : 0.6983211040496826
+fast+boost(l1) compute 2 exec time : 0.8494527339935303
+fast+boost(l1) matching exec time : 0.3688797950744629
+fast+boost(l1) matching expected time : 0.027051210403442383
+fast+boost(l1) detect+desc time : 1.5575385093688965
+fast+boost(l1) future time : 1.5602436304092406
+fast+boost(l1) desc : 100.000000%, match : 100.000000%, final : 100.000000%
+fast+boost(l1) avg match distance : 679.0044328552804
+fast+boost(l1) probably good matches (<60px) : 2936, 76.558018% of matches, 76.558018% of keypoints
+-------------------------------------- fast+boost(l2) --------------------------------------
+fast+boost(l2) compute 1 exec time : 0.7046527862548828
+fast+boost(l2) compute 2 exec time : 0.8623194694519043
+fast+boost(l2) matching exec time : 0.3701155185699463
+fast+boost(l2) matching expected time : 0.02713465690612793
+fast+boost(l2) detect+desc time : 1.5767428874969482
+fast+boost(l2) future time : 1.579456353187561
+fast+boost(l2) desc : 100.000000%, match : 100.000000%, final : 100.000000%
+fast+boost(l2) avg match distance : 223.59530259297756
+fast+boost(l2) probably good matches (<60px) : 2547, 66.414602% of matches, 66.414602% of keypoints
+-------------------------------------- fast+brief(H1) --------------------------------------
+fast+brief(H1) compute 1 exec time : 0.023582935333251953
+fast+brief(H1) compute 2 exec time : 0.04859113693237305
+fast+brief(H1) matching exec time : 0.3728156089782715
+fast+brief(H1) matching expected time : 0.02046346664428711
+fast+brief(H1) detect+desc time : 0.08197927474975586
+fast+brief(H1) future time : 0.08402562141418457
+fast+brief(H1) desc : 92.646675%, match : 100.000000%, final : 92.646675%
+fast+brief(H1) avg match distance : 17.001970166056854
+fast+brief(H1) probably good matches (<60px) : 3137, 88.291585% of matches, 81.799218% of keypoints
+-------------------------------------- fast+brief(H2) --------------------------------------
+fast+brief(H2) compute 1 exec time : 0.023006916046142578
+fast+brief(H2) compute 2 exec time : 0.03207230567932129
+fast+brief(H2) matching exec time : 0.38834214210510254
+fast+brief(H2) matching expected time : 0.028980731964111328
+fast+brief(H2) detect+desc time : 0.06490683555603027
+fast+brief(H2) future time : 0.06780490875244141
+fast+brief(H2) desc : 92.646675%, match : 100.000000%, final : 92.646675%
+fast+brief(H2) avg match distance : 16.00675485505207
+fast+brief(H2) probably good matches (<60px) : 3127, 88.010132% of matches, 81.538462% of keypoints
+-------------------------------------- fast+daisy(l1) --------------------------------------
+fast+daisy(l1) compute 1 exec time : 0.27040863037109375
+fast+daisy(l1) compute 2 exec time : 0.31313610076904297
+fast+daisy(l1) matching exec time : 2.4650797843933105
+fast+daisy(l1) matching expected time : 0.14363408088684082
+fast+daisy(l1) detect+desc time : 0.5933125019073486
+fast+daisy(l1) future time : 0.6076759099960327
+fast+daisy(l1) desc : 100.000000%, match : 100.000000%, final : 100.000000%
+fast+daisy(l1) avg match distance : 0.1665388871949637
+fast+daisy(l1) probably good matches (<60px) : 3620, 94.393742% of matches, 94.393742% of keypoints
+-------------------------------------- fast+daisy(l2) --------------------------------------
+fast+daisy(l2) compute 1 exec time : 0.29056477546691895
+fast+daisy(l2) compute 2 exec time : 0.37900614738464355
+fast+daisy(l2) matching exec time : 2.3620853424072266
+fast+daisy(l2) matching expected time : 0.17319703102111816
+fast+daisy(l2) detect+desc time : 0.679337739944458
+fast+daisy(l2) future time : 0.6966574430465698
+fast+daisy(l2) desc : 100.000000%, match : 100.000000%, final : 100.000000%
+fast+daisy(l2) avg match distance : 0.017471358635887196
+fast+daisy(l2) probably good matches (<60px) : 3568, 93.037810% of matches, 93.037810% of keypoints
+-------------------------------------- fast+freak(H1) --------------------------------------
+fast+freak(H1) compute 1 exec time : 0.04107332229614258
+fast+freak(H1) compute 2 exec time : 0.060320377349853516
+fast+freak(H1) matching exec time : 0.31850385665893555
+fast+freak(H1) matching expected time : 0.029271602630615234
+fast+freak(H1) detect+desc time : 0.1111760139465332
+fast+freak(H1) future time : 0.11410317420959473
+fast+freak(H1) desc : 83.676662%, match : 100.000000%, final : 83.676662%
+fast+freak(H1) avg match distance : 29.28762854471798
+fast+freak(H1) probably good matches (<60px) : 3094, 96.416329% of matches, 80.677966% of keypoints
+-------------------------------------- fast+freak(H2) --------------------------------------
+fast+freak(H2) compute 1 exec time : 0.03118586540222168
+fast+freak(H2) compute 2 exec time : 0.04022669792175293
+fast+freak(H2) matching exec time : 0.6106679439544678
+fast+freak(H2) matching expected time : 0.03928828239440918
+fast+freak(H2) detect+desc time : 0.0811760425567627
+fast+freak(H2) future time : 0.08510487079620362
+fast+freak(H2) desc : 83.676662%, match : 100.000000%, final : 83.676662%
+fast+freak(H2) avg match distance : 27.82050483016516
+fast+freak(H2) probably good matches (<60px) : 3091, 96.322842% of matches, 80.599739% of keypoints
+-------------------------------------- fast+latch(H1) --------------------------------------
+fast+latch(H1) compute 1 exec time : 0.35988426208496094
+fast+latch(H1) compute 2 exec time : 0.4300117492675781
+fast+latch(H1) matching exec time : 0.2964920997619629
+fast+latch(H1) matching expected time : 0.028445959091186523
+fast+latch(H1) detect+desc time : 0.7996571063995361
+fast+latch(H1) future time : 0.8025017023086548
+fast+latch(H1) desc : 93.037810%, match : 100.000000%, final : 93.037810%
+fast+latch(H1) avg match distance : 27.31334080717489
+fast+latch(H1) probably good matches (<60px) : 3362, 94.226457% of matches, 87.666232% of keypoints
+-------------------------------------- fast+latch(H2) --------------------------------------
+fast+latch(H2) compute 1 exec time : 0.3309612274169922
+fast+latch(H2) compute 2 exec time : 0.4534890651702881
+fast+latch(H2) matching exec time : 0.2892923355102539
+fast+latch(H2) matching expected time : 0.028609037399291992
+fast+latch(H2) detect+desc time : 0.794217586517334
+fast+latch(H2) future time : 0.7970784902572632
+fast+latch(H2) desc : 93.037810%, match : 100.000000%, final : 93.037810%
+fast+latch(H2) avg match distance : 24.978699551569505
+fast+latch(H2) probably good matches (<60px) : 3338, 93.553812% of matches, 87.040417% of keypoints
+-------------------------------------- fast+lucid(H1) --------------------------------------
+fast+lucid(H1) compute 1 exec time : 0.007545948028564453
+fast+lucid(H1) compute 2 exec time : 0.0062122344970703125
+fast+lucid(H1) matching exec time : 0.5148787498474121
+fast+lucid(H1) matching expected time : 0.021847248077392578
+fast+lucid(H1) detect+desc time : 0.023723363876342773
+fast+lucid(H1) future time : 0.02590808868408203
+fast+lucid(H1) desc : 100.000000%, match : 100.000000%, final : 100.000000%
+fast+lucid(H1) avg match distance : 36.903259452411994
+fast+lucid(H1) probably good matches (<60px) : 1349, 35.176010% of matches, 35.176010% of keypoints
+-------------------------------------- fast+lucid(H2) --------------------------------------
+fast+lucid(H2) compute 1 exec time : 0.006369352340698242
+fast+lucid(H2) compute 2 exec time : 0.0051724910736083984
+fast+lucid(H2) matching exec time : 0.4995415210723877
+fast+lucid(H2) matching expected time : 0.023869991302490234
+fast+lucid(H2) detect+desc time : 0.02130603790283203
+fast+lucid(H2) future time : 0.023693037033081055
+fast+lucid(H2) desc : 100.000000%, match : 100.000000%, final : 100.000000%
+fast+lucid(H2) avg match distance : 27.572881355932203
+fast+lucid(H2) probably good matches (<60px) : 1485, 38.722295% of matches, 38.722295% of keypoints
+##################################### Detector : gftt #####################################
+gftt detect 1 exec time : 0.11927652359008789
+gftt detect 2 exec time : 0.10313940048217773
+gftt feature 1 count : 4749
+gftt feature 2 count : 5189
+-------------------------------------- gftt+sift(l1) --------------------------------------
+gftt+sift(l1) compute 1 exec time : 0.11837363243103027
+gftt+sift(l1) compute 2 exec time : 0.15970420837402344
+gftt+sift(l1) matching exec time : 2.1530556678771973
+gftt+sift(l1) matching expected time : 0.12853622436523438
+gftt+sift(l1) detect+desc time : 0.5006568431854248
+gftt+sift(l1) future time : 0.5135104656219482
+gftt+sift(l1) desc : 100.000000%, match : 100.000000%, final : 100.000000%
+gftt+sift(l1) avg match distance : 817.4053484944199
+gftt+sift(l1) probably good matches (<60px) : 4206, 88.566014% of matches, 88.566014% of keypoints
+-------------------------------------- gftt+sift(l2) --------------------------------------
+gftt+sift(l2) compute 1 exec time : 0.16904926300048828
+gftt+sift(l2) compute 2 exec time : 0.1788325309753418
+gftt+sift(l2) matching exec time : 2.5661871433258057
+gftt+sift(l2) matching expected time : 0.19565439224243164
+gftt+sift(l2) detect+desc time : 0.5704715251922607
+gftt+sift(l2) future time : 0.5900369644165039
+gftt+sift(l2) desc : 100.000000%, match : 100.000000%, final : 100.000000%
+gftt+sift(l2) avg match distance : 133.01231587593318
+gftt+sift(l2) probably good matches (<60px) : 4185, 88.123816% of matches, 88.123816% of keypoints
+-------------------------------------- gftt+surf(l1) --------------------------------------
+gftt+surf(l1) compute 1 exec time : 0.015529632568359375
+gftt+surf(l1) compute 2 exec time : 0.0199432373046875
+gftt+surf(l1) matching exec time : 1.1255803108215332
+gftt+surf(l1) matching expected time : 0.043060302734375
+gftt+surf(l1) detect+desc time : 0.25803709030151367
+gftt+surf(l1) future time : 0.2623431205749512
+gftt+surf(l1) desc : 100.000000%, match : 100.000000%, final : 100.000000%
+gftt+surf(l1) avg match distance : 1.2630999548563482
+gftt+surf(l1) probably good matches (<60px) : 1162, 24.468309% of matches, 24.468309% of keypoints
+-------------------------------------- gftt+surf(l2) --------------------------------------
+gftt+surf(l2) compute 1 exec time : 0.014449834823608398
+gftt+surf(l2) compute 2 exec time : 0.0155487060546875
+gftt+surf(l2) matching exec time : 1.0995569229125977
+gftt+surf(l2) matching expected time : 0.04491281509399414
+gftt+surf(l2) detect+desc time : 0.25255274772644043
+gftt+surf(l2) future time : 0.25704402923583985
+gftt+surf(l2) desc : 100.000000%, match : 100.000000%, final : 100.000000%
+gftt+surf(l2) avg match distance : 0.2529728570111703
+gftt+surf(l2) probably good matches (<60px) : 988, 20.804380% of matches, 20.804380% of keypoints
+-------------------------------------- gftt+surfext(l1) --------------------------------------
+gftt+surfext(l1) compute 1 exec time : 0.018585920333862305
+gftt+surfext(l1) compute 2 exec time : 0.029437541961669922
+gftt+surfext(l1) matching exec time : 2.134932279586792
+gftt+surfext(l1) matching expected time : 0.09359884262084961
+gftt+surfext(l1) detect+desc time : 0.2706005573272705
+gftt+surfext(l1) future time : 0.27996044158935546
+gftt+surfext(l1) desc : 100.000000%, match : 100.000000%, final : 100.000000%
+gftt+surfext(l1) avg match distance : 2.0009623324778185
+gftt+surfext(l1) probably good matches (<60px) : 1183, 24.910507% of matches, 24.910507% of keypoints
+-------------------------------------- gftt+surfext(l2) --------------------------------------
+gftt+surfext(l2) compute 1 exec time : 0.020195960998535156
+gftt+surfext(l2) compute 2 exec time : 0.0271604061126709
+gftt+surfext(l2) matching exec time : 2.2108237743377686
+gftt+surfext(l2) matching expected time : 0.13210415840148926
+gftt+surfext(l2) detect+desc time : 0.269944429397583
+gftt+surfext(l2) future time : 0.28315484523773193
+gftt+surfext(l2) desc : 100.000000%, match : 100.000000%, final : 100.000000%
+gftt+surfext(l2) avg match distance : 0.31929087659995553
+gftt+surfext(l2) probably good matches (<60px) : 981, 20.656980% of matches, 20.656980% of keypoints
+-------------------------------------- gftt+brisk(H1) --------------------------------------
+gftt+brisk(H1) compute 1 exec time : 0.06464672088623047
+gftt+brisk(H1) compute 2 exec time : 0.09446334838867188
+gftt+brisk(H1) matching exec time : 0.5221984386444092
+gftt+brisk(H1) matching expected time : 0.021067380905151367
+gftt+brisk(H1) detect+desc time : 0.38167691230773926
+gftt+brisk(H1) future time : 0.3837836503982544
+gftt+brisk(H1) desc : 96.757212%, match : 100.000000%, final : 96.757212%
+gftt+brisk(H1) avg match distance : 55.58585418933624
+gftt+brisk(H1) probably good matches (<60px) : 3122, 67.943417% of matches, 65.740156% of keypoints
+-------------------------------------- gftt+brisk(H2) --------------------------------------
+gftt+brisk(H2) compute 1 exec time : 0.06808614730834961
+gftt+brisk(H2) compute 2 exec time : 0.11305832862854004
+gftt+brisk(H2) matching exec time : 0.9363319873809814
+gftt+brisk(H2) matching expected time : 0.04074859619140625
+gftt+brisk(H2) detect+desc time : 0.4037058353424072
+gftt+brisk(H2) future time : 0.40778069496154784
+gftt+brisk(H2) desc : 96.757212%, match : 100.000000%, final : 96.757212%
+gftt+brisk(H2) avg match distance : 48.12557127312296
+gftt+brisk(H2) probably good matches (<60px) : 3081, 67.051143% of matches, 64.876816% of keypoints
+-------------------------------------- gftt+orb(H1) --------------------------------------
+gftt+orb(H1) compute 1 exec time : 0.04392385482788086
+gftt+orb(H1) compute 2 exec time : 0.08466172218322754
+gftt+orb(H1) matching exec time : 0.4522068500518799
+gftt+orb(H1) matching expected time : 0.02017951011657715
+gftt+orb(H1) detect+desc time : 0.35118722915649414
+gftt+orb(H1) future time : 0.35320518016815183
+gftt+orb(H1) desc : 92.251000%, match : 100.000000%, final : 92.251000%
+gftt+orb(H1) avg match distance : 20.015065053640722
+gftt+orb(H1) probably good matches (<60px) : 3789, 86.487103% of matches, 79.785218% of keypoints
+-------------------------------------- gftt+orb2(H1) --------------------------------------
+gftt+orb2(H1) compute 1 exec time : 0.03157401084899902
+gftt+orb2(H1) compute 2 exec time : 0.037992000579833984
+gftt+orb2(H1) matching exec time : 0.45496106147766113
+gftt+orb2(H1) matching expected time : 0.01864480972290039
+gftt+orb2(H1) detect+desc time : 0.29213690757751465
+gftt+orb2(H1) future time : 0.2940013885498047
+gftt+orb2(H1) desc : 92.251000%, match : 100.000000%, final : 92.251000%
+gftt+orb2(H1) avg match distance : 20.015065053640722
+gftt+orb2(H1) probably good matches (<60px) : 3789, 86.487103% of matches, 79.785218% of keypoints
+-------------------------------------- gftt+orb(H2) --------------------------------------
+gftt+orb(H2) compute 1 exec time : 0.03412127494812012
+gftt+orb(H2) compute 2 exec time : 0.0726170539855957
+gftt+orb(H2) matching exec time : 0.6107184886932373
+gftt+orb(H2) matching expected time : 0.02390003204345703
+gftt+orb(H2) detect+desc time : 0.32930660247802734
+gftt+orb(H2) future time : 0.331696605682373
+gftt+orb(H2) desc : 92.251000%, match : 100.000000%, final : 92.251000%
+gftt+orb(H2) avg match distance : 18.731796393517463
+gftt+orb(H2) probably good matches (<60px) : 3767, 85.984935% of matches, 79.321963% of keypoints
+-------------------------------------- gftt+boost(l1) --------------------------------------
+gftt+boost(l1) compute 1 exec time : 0.9084980487823486
+gftt+boost(l1) compute 2 exec time : 1.110917091369629
+gftt+boost(l1) matching exec time : 0.6815230846405029
+gftt+boost(l1) matching expected time : 0.028112173080444336
+gftt+boost(l1) detect+desc time : 2.2419817447662354
+gftt+boost(l1) future time : 2.2447929620742797
+gftt+boost(l1) desc : 100.000000%, match : 100.000000%, final : 100.000000%
+gftt+boost(l1) avg match distance : 657.6369762055169
+gftt+boost(l1) probably good matches (<60px) : 3777, 79.532533% of matches, 79.532533% of keypoints
+-------------------------------------- gftt+boost(l2) --------------------------------------
+gftt+boost(l2) compute 1 exec time : 0.966893196105957
+gftt+boost(l2) compute 2 exec time : 1.1420607566833496
+gftt+boost(l2) matching exec time : 0.6614179611206055
+gftt+boost(l2) matching expected time : 0.027460336685180664
+gftt+boost(l2) detect+desc time : 2.3315329551696777
+gftt+boost(l2) future time : 2.3342789888381956
+gftt+boost(l2) desc : 100.000000%, match : 100.000000%, final : 100.000000%
+gftt+boost(l2) avg match distance : 220.45088048582704
+gftt+boost(l2) probably good matches (<60px) : 3290, 69.277743% of matches, 69.277743% of keypoints
+-------------------------------------- gftt+brief(H1) --------------------------------------
+gftt+brief(H1) compute 1 exec time : 0.041071414947509766
+gftt+brief(H1) compute 2 exec time : 0.08437943458557129
+gftt+brief(H1) matching exec time : 0.48729443550109863
+gftt+brief(H1) matching expected time : 0.017125606536865234
+gftt+brief(H1) detect+desc time : 0.34803128242492676
+gftt+brief(H1) future time : 0.3497438430786133
+gftt+brief(H1) desc : 93.198568%, match : 100.000000%, final : 93.198568%
+gftt+brief(H1) avg match distance : 15.129010393131496
+gftt+brief(H1) probably good matches (<60px) : 4025, 90.939901% of matches, 84.754685% of keypoints
+-------------------------------------- gftt+brief(H2) --------------------------------------
+gftt+brief(H2) compute 1 exec time : 0.03648638725280762
+gftt+brief(H2) compute 2 exec time : 0.05490708351135254
+gftt+brief(H2) matching exec time : 0.545795202255249
+gftt+brief(H2) matching expected time : 0.024866104125976562
+gftt+brief(H2) detect+desc time : 0.3139688968658447
+gftt+brief(H2) future time : 0.3164555072784424
+gftt+brief(H2) desc : 93.198568%, match : 100.000000%, final : 93.198568%
+gftt+brief(H2) avg match distance : 14.313601446000904
+gftt+brief(H2) probably good matches (<60px) : 4002, 90.420244% of matches, 84.270373% of keypoints
+-------------------------------------- gftt+daisy(l1) --------------------------------------
+gftt+daisy(l1) compute 1 exec time : 0.27095818519592285
+gftt+daisy(l1) compute 2 exec time : 0.29500865936279297
+gftt+daisy(l1) matching exec time : 3.386892557144165
+gftt+daisy(l1) matching expected time : 0.17145395278930664
+gftt+daisy(l1) detect+desc time : 0.7885382175445557
+gftt+daisy(l1) future time : 0.8056836128234863
+gftt+daisy(l1) desc : 100.000000%, match : 100.000000%, final : 100.000000%
+gftt+daisy(l1) avg match distance : 0.1379651134550512
+gftt+daisy(l1) probably good matches (<60px) : 4556, 95.935987% of matches, 95.935987% of keypoints
+-------------------------------------- gftt+daisy(l2) --------------------------------------
+gftt+daisy(l2) compute 1 exec time : 0.27385520935058594
+gftt+daisy(l2) compute 2 exec time : 0.34612536430358887
+gftt+daisy(l2) matching exec time : 3.3442742824554443
+gftt+daisy(l2) matching expected time : 0.16285490989685059
+gftt+daisy(l2) detect+desc time : 0.8425500392913818
+gftt+daisy(l2) future time : 0.8588355302810669
+gftt+daisy(l2) desc : 100.000000%, match : 100.000000%, final : 100.000000%
+gftt+daisy(l2) avg match distance : 0.014465882490828039
+gftt+daisy(l2) probably good matches (<60px) : 4468, 94.082965% of matches, 94.082965% of keypoints
+-------------------------------------- gftt+freak(H1) --------------------------------------
+gftt+freak(H1) compute 1 exec time : 0.03900647163391113
+gftt+freak(H1) compute 2 exec time : 0.055339813232421875
+gftt+freak(H1) matching exec time : 0.45697879791259766
+gftt+freak(H1) matching expected time : 0.02110576629638672
+gftt+freak(H1) detect+desc time : 0.31691431999206543
+gftt+freak(H1) future time : 0.3190248966217041
+gftt+freak(H1) desc : 83.385976%, match : 100.000000%, final : 83.385976%
+gftt+freak(H1) avg match distance : 26.13131313131313
+gftt+freak(H1) probably good matches (<60px) : 3841, 96.994949% of matches, 80.880185% of keypoints
+-------------------------------------- gftt+freak(H2) --------------------------------------
+gftt+freak(H2) compute 1 exec time : 0.04149603843688965
+gftt+freak(H2) compute 2 exec time : 0.07486248016357422
+gftt+freak(H2) matching exec time : 0.7552926540374756
+gftt+freak(H2) matching expected time : 0.03908967971801758
+gftt+freak(H2) detect+desc time : 0.33892345428466797
+gftt+freak(H2) future time : 0.3428324222564697
+gftt+freak(H2) desc : 83.385976%, match : 100.000000%, final : 83.385976%
+gftt+freak(H2) avg match distance : 24.957323232323233
+gftt+freak(H2) probably good matches (<60px) : 3846, 97.121212% of matches, 80.985471% of keypoints
+-------------------------------------- gftt+latch(H1) --------------------------------------
+gftt+latch(H1) compute 1 exec time : 0.4016404151916504
+gftt+latch(H1) compute 2 exec time : 0.49224281311035156
+gftt+latch(H1) matching exec time : 0.40975069999694824
+gftt+latch(H1) matching expected time : 0.02469468116760254
+gftt+latch(H1) detect+desc time : 1.1164467334747314
+gftt+latch(H1) future time : 1.1189162015914917
+gftt+latch(H1) desc : 93.430196%, match : 100.000000%, final : 93.430196%
+gftt+latch(H1) avg match distance : 24.823980166779357
+gftt+latch(H1) probably good matches (<60px) : 4230, 95.334686% of matches, 89.071383% of keypoints
+-------------------------------------- gftt+latch(H2) --------------------------------------
+gftt+latch(H2) compute 1 exec time : 0.43859434127807617
+gftt+latch(H2) compute 2 exec time : 0.4755430221557617
+gftt+latch(H2) matching exec time : 0.5480952262878418
+gftt+latch(H2) matching expected time : 0.023261070251464844
+gftt+latch(H2) detect+desc time : 1.1367030143737793
+gftt+latch(H2) future time : 1.1390291213989259
+gftt+latch(H2) desc : 93.430196%, match : 100.000000%, final : 93.430196%
+gftt+latch(H2) avg match distance : 22.822853279242732
+gftt+latch(H2) probably good matches (<60px) : 4216, 95.019157% of matches, 88.776585% of keypoints
+-------------------------------------- gftt+lucid(H1) --------------------------------------
+gftt+lucid(H1) compute 1 exec time : 0.007570743560791016
+gftt+lucid(H1) compute 2 exec time : 0.007664203643798828
+gftt+lucid(H1) matching exec time : 0.6405644416809082
+gftt+lucid(H1) matching expected time : 0.028506994247436523
+gftt+lucid(H1) detect+desc time : 0.23784470558166504
+gftt+lucid(H1) future time : 0.24069540500640868
+gftt+lucid(H1) desc : 100.000000%, match : 100.000000%, final : 100.000000%
+gftt+lucid(H1) avg match distance : 34.80774899978943
+gftt+lucid(H1) probably good matches (<60px) : 1761, 37.081491% of matches, 37.081491% of keypoints
+-------------------------------------- gftt+lucid(H2) --------------------------------------
+gftt+lucid(H2) compute 1 exec time : 0.008153200149536133
+gftt+lucid(H2) compute 2 exec time : 0.007040262222290039
+gftt+lucid(H2) matching exec time : 0.609020471572876
+gftt+lucid(H2) matching expected time : 0.021373987197875977
+gftt+lucid(H2) detect+desc time : 0.23780536651611328
+gftt+lucid(H2) future time : 0.23994276523590088
+gftt+lucid(H2) desc : 100.000000%, match : 100.000000%, final : 100.000000%
+gftt+lucid(H2) avg match distance : 25.98083807117288
+gftt+lucid(H2) probably good matches (<60px) : 1927, 40.576964% of matches, 40.576964% of keypoints
+##################################### Detector : orb #####################################
+orb detect 1 exec time : 0.02615046501159668
+orb detect 2 exec time : 0.027390241622924805
+orb feature 1 count : 4993
+orb feature 2 count : 5275
+-------------------------------------- orb+sift(l1) --------------------------------------
+orb+sift(l1) compute 1 exec time : 2.312053680419922
+orb+sift(l1) compute 2 exec time : 2.382737874984741
+orb+sift(l1) matching exec time : 2.359908103942871
+orb+sift(l1) matching expected time : 0.11081075668334961
+orb+sift(l1) detect+desc time : 4.748411178588867
+orb+sift(l1) future time : 4.759492254257202
+orb+sift(l1) desc : 100.000000%, match : 100.000000%, final : 100.000000%
+orb+sift(l1) avg match distance : 579.3560985379531
+orb+sift(l1) probably good matches (<60px) : 4864, 97.416383% of matches, 97.416383% of keypoints
+-------------------------------------- orb+sift(l2) --------------------------------------
+orb+sift(l2) compute 1 exec time : 2.345811367034912
+orb+sift(l2) compute 2 exec time : 2.4449031352996826
+orb+sift(l2) matching exec time : 2.1830103397369385
+orb+sift(l2) matching expected time : 0.08880805969238281
+orb+sift(l2) detect+desc time : 4.844338655471802
+orb+sift(l2) future time : 4.85321946144104
+orb+sift(l2) desc : 100.000000%, match : 100.000000%, final : 100.000000%
+orb+sift(l2) avg match distance : 83.95568216823514
+orb+sift(l2) probably good matches (<60px) : 4857, 97.276187% of matches, 97.276187% of keypoints
+-------------------------------------- orb+surf(l1) --------------------------------------
+orb+surf(l1) compute 1 exec time : 0.6896207332611084
+orb+surf(l1) compute 2 exec time : 0.8136324882507324
+orb+surf(l1) matching exec time : 1.1531529426574707
+orb+surf(l1) matching expected time : 0.04982399940490723
+orb+surf(l1) detect+desc time : 1.5568907260894775
+orb+surf(l1) future time : 1.5618731260299683
+orb+surf(l1) desc : 100.000000%, match : 100.000000%, final : 100.000000%
+orb+surf(l1) avg match distance : 0.4951689086400081
+orb+surf(l1) probably good matches (<60px) : 4937, 98.878430% of matches, 98.878430% of keypoints
+-------------------------------------- orb+surf(l2) --------------------------------------
+orb+surf(l2) compute 1 exec time : 0.6388442516326904
+orb+surf(l2) compute 2 exec time : 0.8687229156494141
+orb+surf(l2) matching exec time : 1.0449020862579346
+orb+surf(l2) matching expected time : 0.04339098930358887
+orb+surf(l2) detect+desc time : 1.561187744140625
+orb+surf(l2) future time : 1.5655268430709839
+orb+surf(l2) desc : 100.000000%, match : 100.000000%, final : 100.000000%
+orb+surf(l2) avg match distance : 0.11473360044647425
+orb+surf(l2) probably good matches (<60px) : 4896, 98.057280% of matches, 98.057280% of keypoints
+-------------------------------------- orb+surfext(l1) --------------------------------------
+orb+surfext(l1) compute 1 exec time : 0.667095422744751
+orb+surfext(l1) compute 2 exec time : 0.8632357120513916
+orb+surfext(l1) matching exec time : 2.344484567642212
+orb+surfext(l1) matching expected time : 0.10934090614318848
+orb+surfext(l1) detect+desc time : 1.583953619003296
+orb+surfext(l1) future time : 1.5948877096176148
+orb+surfext(l1) desc : 100.000000%, match : 100.000000%, final : 100.000000%
+orb+surfext(l1) avg match distance : 1.1243029118387036
+orb+surfext(l1) probably good matches (<60px) : 4956, 99.258963% of matches, 99.258963% of keypoints
+-------------------------------------- orb+surfext(l2) --------------------------------------
+orb+surfext(l2) compute 1 exec time : 0.6804261207580566
+orb+surfext(l2) compute 2 exec time : 0.8038311004638672
+orb+surfext(l2) matching exec time : 2.307793140411377
+orb+surfext(l2) matching expected time : 0.08840441703796387
+orb+surfext(l2) detect+desc time : 1.537881851196289
+orb+surfext(l2) future time : 1.5467222929000854
+orb+surfext(l2) desc : 100.000000%, match : 100.000000%, final : 100.000000%
+orb+surfext(l2) avg match distance : 0.20225908479922083
+orb+surfext(l2) probably good matches (<60px) : 4917, 98.477869% of matches, 98.477869% of keypoints
+-------------------------------------- orb+brisk(H1) --------------------------------------
+orb+brisk(H1) compute 1 exec time : 0.10985183715820312
+orb+brisk(H1) compute 2 exec time : 0.1335005760192871
+orb+brisk(H1) matching exec time : 0.3587315082550049
+orb+brisk(H1) matching expected time : 0.023906469345092773
+orb+brisk(H1) detect+desc time : 0.29697585105895996
+orb+brisk(H1) future time : 0.29936649799346926
+orb+brisk(H1) desc : 90.807130%, match : 100.000000%, final : 90.807130%
+orb+brisk(H1) avg match distance : 38.48919276576974
+orb+brisk(H1) probably good matches (<60px) : 4412, 97.309219% of matches, 88.363709% of keypoints
+-------------------------------------- orb+brisk(H2) --------------------------------------
+orb+brisk(H2) compute 1 exec time : 0.11148810386657715
+orb+brisk(H2) compute 2 exec time : 0.10094833374023438
+orb+brisk(H2) matching exec time : 0.8341202735900879
+orb+brisk(H2) matching expected time : 0.052629709243774414
+orb+brisk(H2) detect+desc time : 0.26607203483581543
+orb+brisk(H2) future time : 0.27133500576019287
+orb+brisk(H2) desc : 90.807130%, match : 100.000000%, final : 90.807130%
+orb+brisk(H2) avg match distance : 34.587119541243936
+orb+brisk(H2) probably good matches (<60px) : 4408, 97.220997% of matches, 88.283597% of keypoints
+-------------------------------------- orb+orb(H1) --------------------------------------
+orb+orb(H1) compute 1 exec time : 0.04827737808227539
+orb+orb(H1) compute 2 exec time : 0.07011151313781738
+orb+orb(H1) matching exec time : 0.4731309413909912
+orb+orb(H1) matching expected time : 0.019415616989135742
+orb+orb(H1) detect+desc time : 0.1720280647277832
+orb+orb(H1) future time : 0.17396962642669678
+orb+orb(H1) desc : 100.000000%, match : 100.000000%, final : 100.000000%
+orb+orb(H1) avg match distance : 28.325255357500502
+orb+orb(H1) probably good matches (<60px) : 4321, 86.541158% of matches, 86.541158% of keypoints
+-------------------------------------- orb+orb2(H1) --------------------------------------
+orb+orb2(H1) compute 1 exec time : 0.04769182205200195
+orb+orb2(H1) compute 2 exec time : 0.054522037506103516
+orb+orb2(H1) matching exec time : 0.5502588748931885
+orb+orb2(H1) matching expected time : 0.017198562622070312
+orb+orb2(H1) detect+desc time : 0.15584063529968262
+orb+orb2(H1) future time : 0.15756049156188964
+orb+orb2(H1) desc : 100.000000%, match : 100.000000%, final : 100.000000%
+orb+orb2(H1) avg match distance : 28.325255357500502
+orb+orb2(H1) probably good matches (<60px) : 4321, 86.541158% of matches, 86.541158% of keypoints
+-------------------------------------- orb+orb(H2) --------------------------------------
+orb+orb(H2) compute 1 exec time : 0.047928571701049805
+orb+orb(H2) compute 2 exec time : 0.05131840705871582
+orb+orb(H2) matching exec time : 0.7069816589355469
+orb+orb(H2) matching expected time : 0.024388551712036133
+orb+orb(H2) detect+desc time : 0.15285563468933105
+orb+orb(H2) future time : 0.15529448986053468
+orb+orb(H2) desc : 100.000000%, match : 100.000000%, final : 100.000000%
+orb+orb(H2) avg match distance : 26.147206088523934
+orb+orb(H2) probably good matches (<60px) : 4316, 86.441017% of matches, 86.441017% of keypoints
+-------------------------------------- orb+boost(l1) --------------------------------------
+orb+boost(l1) compute 1 exec time : 1.0753498077392578
+orb+boost(l1) compute 2 exec time : 1.2936666011810303
+orb+boost(l1) matching exec time : 0.6486403942108154
+orb+boost(l1) matching expected time : 0.03106975555419922
+orb+boost(l1) detect+desc time : 2.422649621963501
+orb+boost(l1) future time : 2.425756597518921
+orb+boost(l1) desc : 100.000000%, match : 100.000000%, final : 100.000000%
+orb+boost(l1) avg match distance : 513.9713599038654
+orb+boost(l1) probably good matches (<60px) : 4582, 91.768476% of matches, 91.768476% of keypoints
+-------------------------------------- orb+boost(l2) --------------------------------------
+orb+boost(l2) compute 1 exec time : 1.0925793647766113
+orb+boost(l2) compute 2 exec time : 1.1148269176483154
+orb+boost(l2) matching exec time : 0.7788040637969971
+orb+boost(l2) matching expected time : 0.03191065788269043
+orb+boost(l2) detect+desc time : 2.2610316276550293
+orb+boost(l2) future time : 2.2642226934432985
+orb+boost(l2) desc : 100.000000%, match : 100.000000%, final : 100.000000%
+orb+boost(l2) avg match distance : 189.7652038879918
+orb+boost(l2) probably good matches (<60px) : 4280, 85.720008% of matches, 85.720008% of keypoints
+-------------------------------------- orb+brief(H1) --------------------------------------
+orb+brief(H1) compute 1 exec time : 0.04259753227233887
+orb+brief(H1) compute 2 exec time : 0.05260515213012695
+orb+brief(H1) matching exec time : 0.5020654201507568
+orb+brief(H1) matching expected time : 0.018702983856201172
+orb+brief(H1) detect+desc time : 0.14884066581726074
+orb+brief(H1) future time : 0.15071096420288085
+orb+brief(H1) desc : 100.000000%, match : 100.000000%, final : 100.000000%
+orb+brief(H1) avg match distance : 12.611255758061287
+orb+brief(H1) probably good matches (<60px) : 4816, 96.455037% of matches, 96.455037% of keypoints
+-------------------------------------- orb+brief(H2) --------------------------------------
+orb+brief(H2) compute 1 exec time : 0.04518723487854004
+orb+brief(H2) compute 2 exec time : 0.0561676025390625
+orb+brief(H2) matching exec time : 0.6555955410003662
+orb+brief(H2) matching expected time : 0.022850990295410156
+orb+brief(H2) detect+desc time : 0.15499234199523926
+orb+brief(H2) future time : 0.15727744102478028
+orb+brief(H2) desc : 100.000000%, match : 100.000000%, final : 100.000000%
+orb+brief(H2) avg match distance : 12.05607850991388
+orb+brief(H2) probably good matches (<60px) : 4811, 96.354897% of matches, 96.354897% of keypoints
+-------------------------------------- orb+daisy(l1) --------------------------------------
+orb+daisy(l1) compute 1 exec time : 0.2955498695373535
+orb+daisy(l1) compute 2 exec time : 0.28859472274780273
+orb+daisy(l1) matching exec time : 3.793511152267456
+orb+daisy(l1) matching expected time : 0.15191221237182617
+orb+daisy(l1) detect+desc time : 0.6377744674682617
+orb+daisy(l1) future time : 0.6529656887054444
+orb+daisy(l1) desc : 100.000000%, match : 100.000000%, final : 100.000000%
+orb+daisy(l1) avg match distance : 0.13673608157662132
+orb+daisy(l1) probably good matches (<60px) : 4911, 98.357701% of matches, 98.357701% of keypoints
+-------------------------------------- orb+daisy(l2) --------------------------------------
+orb+daisy(l2) compute 1 exec time : 0.2778909206390381
+orb+daisy(l2) compute 2 exec time : 0.310225248336792
+orb+daisy(l2) matching exec time : 3.7618672847747803
+orb+daisy(l2) matching expected time : 0.16684436798095703
+orb+daisy(l2) detect+desc time : 0.6417458057403564
+orb+daisy(l2) future time : 0.6584302425384522
+orb+daisy(l2) desc : 100.000000%, match : 100.000000%, final : 100.000000%
+orb+daisy(l2) avg match distance : 0.014294088076157153
+orb+daisy(l2) probably good matches (<60px) : 4887, 97.877028% of matches, 97.877028% of keypoints
+-------------------------------------- orb+freak(H1) --------------------------------------
+orb+freak(H1) compute 1 exec time : 0.04261207580566406
+orb+freak(H1) compute 2 exec time : 0.05449509620666504
+orb+freak(H1) matching exec time : 0.5172100067138672
+orb+freak(H1) matching expected time : 0.02062058448791504
+orb+freak(H1) detect+desc time : 0.15073275566101074
+orb+freak(H1) future time : 0.15279481410980225
+orb+freak(H1) desc : 95.914280%, match : 100.000000%, final : 95.914280%
+orb+freak(H1) avg match distance : 22.567550636876174
+orb+freak(H1) probably good matches (<60px) : 4745, 99.081228% of matches, 95.033046% of keypoints
+-------------------------------------- orb+freak(H2) --------------------------------------
+orb+freak(H2) compute 1 exec time : 0.035967111587524414
+orb+freak(H2) compute 2 exec time : 0.06235694885253906
+orb+freak(H2) matching exec time : 1.1027216911315918
+orb+freak(H2) matching expected time : 0.040064334869384766
+orb+freak(H2) detect+desc time : 0.15195250511169434
+orb+freak(H2) future time : 0.1559589385986328
+orb+freak(H2) desc : 95.914280%, match : 100.000000%, final : 95.914280%
+orb+freak(H2) avg match distance : 21.699937356441847
+orb+freak(H2) probably good matches (<60px) : 4747, 99.122990% of matches, 95.073102% of keypoints
+-------------------------------------- orb+latch(H1) --------------------------------------
+orb+latch(H1) compute 1 exec time : 0.4462885856628418
+orb+latch(H1) compute 2 exec time : 0.5003035068511963
+orb+latch(H1) matching exec time : 0.5336587429046631
+orb+latch(H1) matching expected time : 0.022343873977661133
+orb+latch(H1) detect+desc time : 1.0002100467681885
+orb+latch(H1) future time : 1.0024444341659546
+orb+latch(H1) desc : 100.000000%, match : 100.000000%, final : 100.000000%
+orb+latch(H1) avg match distance : 20.440416583216503
+orb+latch(H1) probably good matches (<60px) : 4900, 98.137392% of matches, 98.137392% of keypoints
+-------------------------------------- orb+latch(H2) --------------------------------------
+orb+latch(H2) compute 1 exec time : 0.45104074478149414
+orb+latch(H2) compute 2 exec time : 0.5023424625396729
+orb+latch(H2) matching exec time : 0.6099808216094971
+orb+latch(H2) matching expected time : 0.03389286994934082
+orb+latch(H2) detect+desc time : 1.0070042610168457
+orb+latch(H2) future time : 1.0103935480117798
+orb+latch(H2) desc : 100.000000%, match : 100.000000%, final : 100.000000%
+orb+latch(H2) avg match distance : 19.063488884438215
+orb+latch(H2) probably good matches (<60px) : 4892, 97.977168% of matches, 97.977168% of keypoints
+-------------------------------------- orb+lucid(H1) --------------------------------------
+orb+lucid(H1) compute 1 exec time : 0.0071561336517333984
+orb+lucid(H1) compute 2 exec time : 0.008612871170043945
+orb+lucid(H1) matching exec time : 0.6851789951324463
+orb+lucid(H1) matching expected time : 0.022733688354492188
+orb+lucid(H1) detect+desc time : 0.06941580772399902
+orb+lucid(H1) future time : 0.07168917655944824
+orb+lucid(H1) desc : 100.000000%, match : 100.000000%, final : 100.000000%
+orb+lucid(H1) avg match distance : 38.92509513318646
+orb+lucid(H1) probably good matches (<60px) : 2160, 43.260565% of matches, 43.260565% of keypoints
+-------------------------------------- orb+lucid(H2) --------------------------------------
+orb+lucid(H2) compute 1 exec time : 0.006421804428100586
+orb+lucid(H2) compute 2 exec time : 0.006768703460693359
+orb+lucid(H2) matching exec time : 0.4848816394805908
+orb+lucid(H2) matching expected time : 0.023128032684326172
+orb+lucid(H2) detect+desc time : 0.0668172836303711
+orb+lucid(H2) future time : 0.0691300868988037
+orb+lucid(H2) desc : 100.000000%, match : 100.000000%, final : 100.000000%
+orb+lucid(H2) avg match distance : 29.035049068696175
+orb+lucid(H2) probably good matches (<60px) : 2348, 47.025836% of matches, 47.025836% of keypoints
+##################################### Detector : star #####################################
+star detect 1 exec time : 0.05245399475097656
+star detect 2 exec time : 0.0922849178314209
+star feature 1 count : 4143
+star feature 2 count : 4433
+-------------------------------------- star+sift(l1) --------------------------------------
+star+sift(l1) compute 1 exec time : 0.41526317596435547
+star+sift(l1) compute 2 exec time : 0.9233009815216064
+star+sift(l1) matching exec time : 2.8940703868865967
+star+sift(l1) matching expected time : 0.07766318321228027
+star+sift(l1) detect+desc time : 1.4834039211273193
+star+sift(l1) future time : 1.4911702394485473
+star+sift(l1) desc : 100.000000%, match : 100.000000%, final : 100.000000%
+star+sift(l1) avg match distance : 1041.8942795076032
+star+sift(l1) probably good matches (<60px) : 3602, 86.941830% of matches, 86.941830% of keypoints
+-------------------------------------- star+sift(l2) --------------------------------------
+star+sift(l2) compute 1 exec time : 0.5318758487701416
+star+sift(l2) compute 2 exec time : 1.0898284912109375
+star+sift(l2) matching exec time : 2.746723175048828
+star+sift(l2) matching expected time : 0.1160421371459961
+star+sift(l2) detect+desc time : 1.7665627002716064
+star+sift(l2) future time : 1.778166913986206
+star+sift(l2) desc : 100.000000%, match : 100.000000%, final : 100.000000%
+star+sift(l2) avg match distance : 150.36210956131524
+star+sift(l2) probably good matches (<60px) : 3574, 86.265991% of matches, 86.265991% of keypoints
+-------------------------------------- star+surf(l1) --------------------------------------
+star+surf(l1) compute 1 exec time : 0.022884130477905273
+star+surf(l1) compute 2 exec time : 0.037867069244384766
+star+surf(l1) matching exec time : 1.0166914463043213
+star+surf(l1) matching expected time : 0.03978419303894043
+star+surf(l1) detect+desc time : 0.20557951927185059
+star+surf(l1) future time : 0.20955793857574462
+star+surf(l1) desc : 100.000000%, match : 100.000000%, final : 100.000000%
+star+surf(l1) avg match distance : 1.2738771367779453
+star+surf(l1) probably good matches (<60px) : 2030, 48.998310% of matches, 48.998310% of keypoints
+-------------------------------------- star+surf(l2) --------------------------------------
+star+surf(l2) compute 1 exec time : 0.02167677879333496
+star+surf(l2) compute 2 exec time : 0.027866840362548828
+star+surf(l2) matching exec time : 1.025972604751587
+star+surf(l2) matching expected time : 0.06079983711242676
+star+surf(l2) detect+desc time : 0.1943671703338623
+star+surf(l2) future time : 0.200447154045105
+star+surf(l2) desc : 100.000000%, match : 100.000000%, final : 100.000000%
+star+surf(l2) avg match distance : 0.26184135440677664
+star+surf(l2) probably good matches (<60px) : 1809, 43.664012% of matches, 43.664012% of keypoints
+-------------------------------------- star+surfext(l1) --------------------------------------
+star+surfext(l1) compute 1 exec time : 0.03076481819152832
+star+surfext(l1) compute 2 exec time : 0.04373025894165039
+star+surfext(l1) matching exec time : 1.852478265762329
+star+surfext(l1) matching expected time : 0.09070706367492676
+star+surfext(l1) detect+desc time : 0.2193470001220703
+star+surfext(l1) future time : 0.228417706489563
+star+surfext(l1) desc : 100.000000%, match : 100.000000%, final : 100.000000%
+star+surfext(l1) avg match distance : 2.1776989320998474
+star+surfext(l1) probably good matches (<60px) : 2012, 48.563843% of matches, 48.563843% of keypoints
+-------------------------------------- star+surfext(l2) --------------------------------------
+star+surfext(l2) compute 1 exec time : 0.026917219161987305
+star+surfext(l2) compute 2 exec time : 0.05205702781677246
+star+surfext(l2) matching exec time : 1.8326761722564697
+star+surfext(l2) matching expected time : 0.08777332305908203
+star+surfext(l2) detect+desc time : 0.22381305694580078
+star+surfext(l2) future time : 0.232590389251709
+star+surfext(l2) desc : 100.000000%, match : 100.000000%, final : 100.000000%
+star+surfext(l2) avg match distance : 0.35335503841700644
+star+surfext(l2) probably good matches (<60px) : 1804, 43.543326% of matches, 43.543326% of keypoints
+-------------------------------------- star+brisk(H1) --------------------------------------
+star+brisk(H1) compute 1 exec time : 0.05401039123535156
+star+brisk(H1) compute 2 exec time : 0.06499195098876953
+star+brisk(H1) matching exec time : 0.2773630619049072
+star+brisk(H1) matching expected time : 0.02204442024230957
+star+brisk(H1) detect+desc time : 0.26383090019226074
+star+brisk(H1) future time : 0.2660353422164917
+star+brisk(H1) desc : 100.000000%, match : 100.000000%, final : 100.000000%
+star+brisk(H1) avg match distance : 59.57277335264301
+star+brisk(H1) probably good matches (<60px) : 2231, 53.849867% of matches, 53.849867% of keypoints
+-------------------------------------- star+brisk(H2) --------------------------------------
+star+brisk(H2) compute 1 exec time : 0.14667940139770508
+star+brisk(H2) compute 2 exec time : 0.21190977096557617
+star+brisk(H2) matching exec time : 1.016484260559082
+star+brisk(H2) matching expected time : 0.03836345672607422
+star+brisk(H2) detect+desc time : 0.5034770965576172
+star+brisk(H2) future time : 0.5073134422302246
+star+brisk(H2) desc : 100.000000%, match : 100.000000%, final : 100.000000%
+star+brisk(H2) avg match distance : 50.712527154236064
+star+brisk(H2) probably good matches (<60px) : 2208, 53.294714% of matches, 53.294714% of keypoints
+-------------------------------------- star+orb(H1) --------------------------------------
+star+orb(H1) compute 1 exec time : 0.02331852912902832
+star+orb(H1) compute 2 exec time : 0.038182735443115234
+star+orb(H1) matching exec time : 0.47638440132141113
+star+orb(H1) matching expected time : 0.019138813018798828
+star+orb(H1) detect+desc time : 0.20634889602661133
+star+orb(H1) future time : 0.20826277732849122
+star+orb(H1) desc : 94.882935%, match : 100.000000%, final : 94.882935%
+star+orb(H1) avg match distance : 23.000763164589163
+star+orb(H1) probably good matches (<60px) : 2856, 72.653269% of matches, 68.935554% of keypoints
+-------------------------------------- star+orb2(H1) --------------------------------------
+star+orb2(H1) compute 1 exec time : 0.023690223693847656
+star+orb2(H1) compute 2 exec time : 0.0278475284576416
+star+orb2(H1) matching exec time : 0.3970334529876709
+star+orb2(H1) matching expected time : 0.018458127975463867
+star+orb2(H1) detect+desc time : 0.19636964797973633
+star+orb2(H1) future time : 0.19821546077728272
+star+orb2(H1) desc : 94.882935%, match : 100.000000%, final : 94.882935%
+star+orb2(H1) avg match distance : 23.000763164589163
+star+orb2(H1) probably good matches (<60px) : 2856, 72.653269% of matches, 68.935554% of keypoints
+-------------------------------------- star+orb(H2) --------------------------------------
+star+orb(H2) compute 1 exec time : 0.02402329444885254
+star+orb(H2) compute 2 exec time : 0.031084299087524414
+star+orb(H2) matching exec time : 0.5969703197479248
+star+orb(H2) matching expected time : 0.05595588684082031
+star+orb(H2) detect+desc time : 0.20000720024108887
+star+orb(H2) future time : 0.2056027889251709
+star+orb(H2) desc : 94.882935%, match : 100.000000%, final : 94.882935%
+star+orb(H2) avg match distance : 21.350292546425845
+star+orb(H2) probably good matches (<60px) : 2840, 72.246248% of matches, 68.549360% of keypoints
+-------------------------------------- star+boost(l1) --------------------------------------
+star+boost(l1) compute 1 exec time : 1.034327507019043
+star+boost(l1) compute 2 exec time : 1.033539056777954
+star+boost(l1) matching exec time : 0.5266931056976318
+star+boost(l1) matching expected time : 0.026113510131835938
+star+boost(l1) detect+desc time : 2.2127254009246826
+star+boost(l1) future time : 2.2153367519378664
+star+boost(l1) desc : 100.000000%, match : 100.000000%, final : 100.000000%
+star+boost(l1) avg match distance : 688.8257301472363
+star+boost(l1) probably good matches (<60px) : 2370, 57.204924% of matches, 57.204924% of keypoints
+-------------------------------------- star+boost(l2) --------------------------------------
+star+boost(l2) compute 1 exec time : 1.0074491500854492
+star+boost(l2) compute 2 exec time : 1.0823638439178467
+star+boost(l2) matching exec time : 0.7211260795593262
+star+boost(l2) matching expected time : 0.027540206909179688
+star+boost(l2) detect+desc time : 2.2346856594085693
+star+boost(l2) future time : 2.237439680099487
+star+boost(l2) desc : 100.000000%, match : 100.000000%, final : 100.000000%
+star+boost(l2) avg match distance : 219.83505932651164
+star+boost(l2) probably good matches (<60px) : 2042, 49.287956% of matches, 49.287956% of keypoints
+-------------------------------------- star+brief(H1) --------------------------------------
+star+brief(H1) compute 1 exec time : 0.029508352279663086
+star+brief(H1) compute 2 exec time : 0.058669328689575195
+star+brief(H1) matching exec time : 0.5504958629608154
+star+brief(H1) matching expected time : 0.03464865684509277
+star+brief(H1) detect+desc time : 0.23301100730895996
+star+brief(H1) future time : 0.23647587299346923
+star+brief(H1) desc : 96.041516%, match : 100.000000%, final : 96.041516%
+star+brief(H1) avg match distance : 17.632570997738124
+star+brief(H1) probably good matches (<60px) : 3117, 78.336265% of matches, 75.235337% of keypoints
+-------------------------------------- star+brief(H2) --------------------------------------
+star+brief(H2) compute 1 exec time : 0.07310128211975098
+star+brief(H2) compute 2 exec time : 0.07917428016662598
+star+brief(H2) matching exec time : 0.6913309097290039
+star+brief(H2) matching expected time : 0.026458740234375
+star+brief(H2) detect+desc time : 0.29721832275390625
+star+brief(H2) future time : 0.29986419677734377
+star+brief(H2) desc : 96.041516%, match : 100.000000%, final : 96.041516%
+star+brief(H2) avg match distance : 16.493842674038703
+star+brief(H2) probably good matches (<60px) : 3091, 77.682835% of matches, 74.607772% of keypoints
+-------------------------------------- star+daisy(l1) --------------------------------------
+star+daisy(l1) compute 1 exec time : 0.24037933349609375
+star+daisy(l1) compute 2 exec time : 0.27642011642456055
+star+daisy(l1) matching exec time : 3.0082294940948486
+star+daisy(l1) matching expected time : 0.16358256340026855
+star+daisy(l1) detect+desc time : 0.6616311073303223
+star+daisy(l1) future time : 0.6779893636703491
+star+daisy(l1) desc : 100.000000%, match : 100.000000%, final : 100.000000%
+star+daisy(l1) avg match distance : 0.10251594460062412
+star+daisy(l1) probably good matches (<60px) : 3694, 89.162443% of matches, 89.162443% of keypoints
+-------------------------------------- star+daisy(l2) --------------------------------------
+star+daisy(l2) compute 1 exec time : 0.29573774337768555
+star+daisy(l2) compute 2 exec time : 0.42035913467407227
+star+daisy(l2) matching exec time : 3.5634078979492188
+star+daisy(l2) matching expected time : 0.33046412467956543
+star+daisy(l2) detect+desc time : 0.8609354496002197
+star+daisy(l2) future time : 0.8939818620681763
+star+daisy(l2) desc : 100.000000%, match : 100.000000%, final : 100.000000%
+star+daisy(l2) avg match distance : 0.01036786045555703
+star+daisy(l2) probably good matches (<60px) : 3622, 87.424572% of matches, 87.424572% of keypoints
+-------------------------------------- star+freak(H1) --------------------------------------
+star+freak(H1) compute 1 exec time : 0.043944358825683594
+star+freak(H1) compute 2 exec time : 0.05964398384094238
+star+freak(H1) matching exec time : 0.5146877765655518
+star+freak(H1) matching expected time : 0.05364203453063965
+star+freak(H1) detect+desc time : 0.24843168258666992
+star+freak(H1) future time : 0.2537958860397339
+star+freak(H1) desc : 81.897176%, match : 100.000000%, final : 81.897176%
+star+freak(H1) avg match distance : 31.985558502799883
+star+freak(H1) probably good matches (<60px) : 3084, 90.893015% of matches, 74.438812% of keypoints
+-------------------------------------- star+freak(H2) --------------------------------------
+star+freak(H2) compute 1 exec time : 0.042659759521484375
+star+freak(H2) compute 2 exec time : 0.04274892807006836
+star+freak(H2) matching exec time : 0.905247688293457
+star+freak(H2) matching expected time : 0.12393522262573242
+star+freak(H2) detect+desc time : 0.23026061058044434
+star+freak(H2) future time : 0.24265413284301757
+star+freak(H2) desc : 81.897176%, match : 100.000000%, final : 81.897176%
+star+freak(H2) avg match distance : 30.23017978190392
+star+freak(H2) probably good matches (<60px) : 3076, 90.657235% of matches, 74.245716% of keypoints
+-------------------------------------- star+latch(H1) --------------------------------------
+star+latch(H1) compute 1 exec time : 1.1216545104980469
+star+latch(H1) compute 2 exec time : 1.3997390270233154
+star+latch(H1) matching exec time : 0.7109248638153076
+star+latch(H1) matching expected time : 0.05066108703613281
+star+latch(H1) detect+desc time : 2.666344165802002
+star+latch(H1) future time : 2.6714102745056154
+star+latch(H1) desc : 96.693217%, match : 100.000000%, final : 96.693217%
+star+latch(H1) avg match distance : 30.010484273589615
+star+latch(H1) probably good matches (<60px) : 3434, 85.721418% of matches, 82.886797% of keypoints
+-------------------------------------- star+latch(H2) --------------------------------------
+star+latch(H2) compute 1 exec time : 1.1680777072906494
+star+latch(H2) compute 2 exec time : 0.8607008457183838
+star+latch(H2) matching exec time : 0.6613748073577881
+star+latch(H2) matching expected time : 0.06812715530395508
+star+latch(H2) detect+desc time : 2.173703908920288
+star+latch(H2) future time : 2.1805166244506835
+star+latch(H2) desc : 96.693217%, match : 100.000000%, final : 96.693217%
+star+latch(H2) avg match distance : 27.16600099850225
+star+latch(H2) probably good matches (<60px) : 3405, 84.997504% of matches, 82.186821% of keypoints
+-------------------------------------- star+lucid(H1) --------------------------------------
+star+lucid(H1) compute 1 exec time : 0.006863117218017578
+star+lucid(H1) compute 2 exec time : 0.009183168411254883
+star+lucid(H1) matching exec time : 0.5786933898925781
+star+lucid(H1) matching expected time : 0.03448033332824707
+star+lucid(H1) detect+desc time : 0.1609036922454834
+star+lucid(H1) future time : 0.1643517255783081
+star+lucid(H1) desc : 100.000000%, match : 100.000000%, final : 100.000000%
+star+lucid(H1) avg match distance : 25.354091238233163
+star+lucid(H1) probably good matches (<60px) : 1695, 40.912382% of matches, 40.912382% of keypoints
+-------------------------------------- star+lucid(H2) --------------------------------------
+star+lucid(H2) compute 1 exec time : 0.021922588348388672
+star+lucid(H2) compute 2 exec time : 0.023490190505981445
+star+lucid(H2) matching exec time : 1.0339910984039307
+star+lucid(H2) matching expected time : 0.06061196327209473
+star+lucid(H2) detect+desc time : 0.19057536125183105
+star+lucid(H2) future time : 0.19663655757904053
+star+lucid(H2) desc : 100.000000%, match : 100.000000%, final : 100.000000%
+star+lucid(H2) avg match distance : 18.977552498189716
+star+lucid(H2) probably good matches (<60px) : 1836, 44.315713% of matches, 44.315713% of keypoints
