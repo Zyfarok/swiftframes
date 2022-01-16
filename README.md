@@ -2,7 +2,7 @@
 Motion-compensated Frame Interpolation Algorithm using Features Matching
 
 # Warning :
-1. swiftframes is still in an early stage and offers extremly bad performances, because both the computation being done in python (yes python is very slow) and a few other things that could be optimized.
+1. swiftframes is still in an early stage and offers extremly bad performances, both because the main computations are being done in python (python is very slow) and a few other things that could be optimized.
 2. I didn't work on it since June 2018, but I might go back to it when I'll have more free time as I'm willing to try to make a more performant version (in Rust or C++, using concurency and vectorialization and maybe even using the GPU or an FPGA) and improve the quality with specialized home made features and more optimizations that I have in mind.
 3. If anyone is interested in helping me, don't hesitate to contact me.
 
